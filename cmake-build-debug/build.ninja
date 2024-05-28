@@ -42,33 +42,57 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /home/mellw/CLionProjects/asmlib/cmake-build-debug/
 
 #############################################
-# Utility command for compile_asm_strlen
+# Utility command for asm_strlen
 
-build compile_asm_strlen: phony CMakeFiles/compile_asm_strlen /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
-
-
-#############################################
-# Utility command for compile_asm_print_str
-
-build compile_asm_print_str: phony CMakeFiles/compile_asm_print_str /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
+build asm_strlen: phony CMakeFiles/asm_strlen /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 
 
 #############################################
-# Utility command for compile_asm_execve
+# Utility command for asm_print_str
 
-build compile_asm_execve: phony CMakeFiles/compile_asm_execve /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
-
-
-#############################################
-# Utility command for compile_asm_assert
-
-build compile_asm_assert: phony CMakeFiles/compile_asm_assert /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
+build asm_print_str: phony CMakeFiles/asm_print_str /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 
 
 #############################################
-# Utility command for compile_asm_strcpy
+# Utility command for asm_execve
 
-build compile_asm_strcpy: phony CMakeFiles/compile_asm_strcpy /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+build asm_execve: phony CMakeFiles/asm_execve /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
+
+
+#############################################
+# Utility command for asm_assert
+
+build asm_assert: phony CMakeFiles/asm_assert /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
+
+
+#############################################
+# Utility command for asm_strcpy
+
+build asm_strcpy: phony CMakeFiles/asm_strcpy /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+
+
+#############################################
+# Utility command for asm_print_int
+
+build asm_print_int: phony CMakeFiles/asm_print_int /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
+
+
+#############################################
+# Utility command for asm_malloc
+
+build asm_malloc: phony CMakeFiles/asm_malloc /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+
+
+#############################################
+# Utility command for asm_append_str
+
+build asm_append_str: phony CMakeFiles/asm_append_str /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
+
+
+#############################################
+# Utility command for asm_exit
+
+build asm_exit: phony CMakeFiles/asm_exit /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target asmlib
@@ -77,7 +101,7 @@ build compile_asm_strcpy: phony CMakeFiles/compile_asm_strcpy /home/mellw/CLionP
 #############################################
 # Order-only phony target for asmlib
 
-build cmake_object_order_depends_target_asmlib: phony || .
+build cmake_object_order_depends_target_asmlib: phony || /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 
 build CMakeFiles/asmlib.dir/src/lib.c.o: C_COMPILER__asmlib_unscanned_Debug /home/mellw/CLionProjects/asmlib/src/lib.c || cmake_object_order_depends_target_asmlib
   DEP_FILE = CMakeFiles/asmlib.dir/src/lib.c.o.d
@@ -93,7 +117,7 @@ build CMakeFiles/asmlib.dir/src/lib.c.o: C_COMPILER__asmlib_unscanned_Debug /hom
 #############################################
 # Link the static library libasmlib.a
 
-build libasmlib.a: C_STATIC_LIBRARY_LINKER__asmlib_Debug CMakeFiles/asmlib.dir/src/lib.c.o
+build libasmlib.a: C_STATIC_LIBRARY_LINKER__asmlib_Debug /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o CMakeFiles/asmlib.dir/src/lib.c.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/asmlib.dir
   POST_BUILD = :
@@ -127,9 +151,51 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Phony custom command for CMakeFiles/compile_asm_strlen
+# Utility command for list_install_components
 
-build CMakeFiles/compile_asm_strlen | ${cmake_ninja_workdir}CMakeFiles/compile_asm_strlen: phony /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_strlen
+
+build CMakeFiles/asm_strlen | ${cmake_ninja_workdir}CMakeFiles/asm_strlen: phony /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 
 
 #############################################
@@ -142,9 +208,9 @@ build /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o: CUSTOM_COMMAND /home/me
 
 
 #############################################
-# Phony custom command for CMakeFiles/compile_asm_print_str
+# Phony custom command for CMakeFiles/asm_print_str
 
-build CMakeFiles/compile_asm_print_str | ${cmake_ninja_workdir}CMakeFiles/compile_asm_print_str: phony /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
+build CMakeFiles/asm_print_str | ${cmake_ninja_workdir}CMakeFiles/asm_print_str: phony /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 
 
 #############################################
@@ -157,9 +223,9 @@ build /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o: CUSTOM_COMMAND /home
 
 
 #############################################
-# Phony custom command for CMakeFiles/compile_asm_execve
+# Phony custom command for CMakeFiles/asm_execve
 
-build CMakeFiles/compile_asm_execve | ${cmake_ninja_workdir}CMakeFiles/compile_asm_execve: phony /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
+build CMakeFiles/asm_execve | ${cmake_ninja_workdir}CMakeFiles/asm_execve: phony /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
 
 
 #############################################
@@ -172,9 +238,9 @@ build /home/mellw/CLionProjects/asmlib/obj/asm_execve.o: CUSTOM_COMMAND /home/me
 
 
 #############################################
-# Phony custom command for CMakeFiles/compile_asm_assert
+# Phony custom command for CMakeFiles/asm_assert
 
-build CMakeFiles/compile_asm_assert | ${cmake_ninja_workdir}CMakeFiles/compile_asm_assert: phony /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
+build CMakeFiles/asm_assert | ${cmake_ninja_workdir}CMakeFiles/asm_assert: phony /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
 
 
 #############################################
@@ -187,9 +253,9 @@ build /home/mellw/CLionProjects/asmlib/obj/asm_assert.o: CUSTOM_COMMAND /home/me
 
 
 #############################################
-# Phony custom command for CMakeFiles/compile_asm_strcpy
+# Phony custom command for CMakeFiles/asm_strcpy
 
-build CMakeFiles/compile_asm_strcpy | ${cmake_ninja_workdir}CMakeFiles/compile_asm_strcpy: phony /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+build CMakeFiles/asm_strcpy | ${cmake_ninja_workdir}CMakeFiles/asm_strcpy: phony /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
 
 
 #############################################
@@ -198,6 +264,66 @@ build CMakeFiles/compile_asm_strcpy | ${cmake_ninja_workdir}CMakeFiles/compile_a
 build /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_strcpy.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
   COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/src/asm_strcpy.asm
   DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_strcpy.asm to /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_print_int
+
+build CMakeFiles/asm_print_int | ${cmake_ninja_workdir}CMakeFiles/asm_print_int: phony /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_print_int.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/src/asm_print_int.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_print_int.asm to /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_malloc
+
+build CMakeFiles/asm_malloc | ${cmake_ninja_workdir}CMakeFiles/asm_malloc: phony /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm to /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_append_str
+
+build CMakeFiles/asm_append_str | ${cmake_ninja_workdir}CMakeFiles/asm_append_str: phony /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_append_str.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/src/asm_append_str.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_append_str.asm to /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_exit
+
+build CMakeFiles/asm_exit | ${cmake_ninja_workdir}CMakeFiles/asm_exit: phony /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_exit.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_exit.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/src/asm_exit.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_exit.asm to /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
   restat = 1
 
 # =============================================================================
@@ -213,7 +339,7 @@ build asmlib: phony libasmlib.a
 #############################################
 # Folder: /home/mellw/CLionProjects/asmlib/cmake-build-debug
 
-build all: phony compile_asm_strlen compile_asm_print_str compile_asm_execve compile_asm_assert compile_asm_strcpy libasmlib.a
+build all: phony asm_strlen asm_print_str asm_execve asm_assert asm_strcpy asm_print_int asm_malloc asm_append_str asm_exit libasmlib.a
 
 # =============================================================================
 # Built-in targets

@@ -1,4 +1,13 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion-eap/bin/ninja/linux/x64/ninja -G Ninja -S /home/mellw/CLionProjects/asmlib -B /home/mellw/CLionProjects/asmlib/cmake-build-debug
+-- asm function def: asm_strlen
+-- asm function def: asm_print_str
+-- asm function def: asm_execve
+-- asm function def: asm_assert
+-- asm function def: asm_strcpy
+-- asm function def: asm_print_int
+-- asm function def: asm_malloc
+-- asm function def: asm_append_str
+-- asm function def: asm_exit
 -- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/mellw/CLionProjects/asmlib/cmake-build-debug
