@@ -39,6 +39,7 @@ set(asm_files
         asm_malloc
         asm_append_str
         asm_exit
+        asm_string_struct
 )
 
 # Call the function with the list of assembly files
@@ -62,6 +63,7 @@ add_library(asmlib STATIC
         ${CMAKE_SOURCE_DIR}/obj/asm_malloc.o
         ${CMAKE_SOURCE_DIR}/obj/asm_append_str.o
         ${CMAKE_SOURCE_DIR}/obj/asm_exit.o
+        ${CMAKE_SOURCE_DIR}/obj/asm_string_struct.o
 )
 install(FILES ${LIB_HEADERS} # Install the header files
         DESTINATION include/asmlib/

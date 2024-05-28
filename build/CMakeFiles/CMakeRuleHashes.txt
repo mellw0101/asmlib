@@ -8,6 +8,7 @@ d5221c0a8e91bdd2de9cc83a6169ad6c /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
 7469928b3c9f8a0e0442d2ebcaf26871 /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
 1c651586d3e349fec64053d2617751f3 /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 4ab2cd801f689e0524fab21de7c94d71 /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+a3b35bab016ea4404b9ac44e81e1b57d /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
 88bc890a2ce1e3bf433e46441a0968ef /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_append_str
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_assert
@@ -17,4 +18,5 @@ d5221c0a8e91bdd2de9cc83a6169ad6c /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_print_int
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_print_str
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_strcpy
+000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_string_struct
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_strlen

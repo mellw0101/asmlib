@@ -114,10 +114,15 @@ include CMakeFiles/asmlib.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_exit.asm to /home/mellw/CLionProjects/asmlib/obj/asm_exit.o"
 	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/src/asm_exit.asm
 
+/home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o: /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm to /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm
+
 CMakeFiles/asmlib.dir/src/lib.c.o: CMakeFiles/asmlib.dir/flags.make
 CMakeFiles/asmlib.dir/src/lib.c.o: /home/mellw/CLionProjects/asmlib/src/lib.c
 CMakeFiles/asmlib.dir/src/lib.c.o: CMakeFiles/asmlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/asmlib.dir/src/lib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/asmlib.dir/src/lib.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/asmlib.dir/src/lib.c.o -MF CMakeFiles/asmlib.dir/src/lib.c.o.d -o CMakeFiles/asmlib.dir/src/lib.c.o -c /home/mellw/CLionProjects/asmlib/src/lib.c
 
 CMakeFiles/asmlib.dir/src/lib.c.i: cmake_force
@@ -142,7 +147,8 @@ asmlib_EXTERNAL_OBJECTS = \
 "/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_append_str.o" \
-"/home/mellw/CLionProjects/asmlib/obj/asm_exit.o"
+"/home/mellw/CLionProjects/asmlib/obj/asm_exit.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o"
 
 libasmlib.a: CMakeFiles/asmlib.dir/src/lib.c.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
@@ -154,9 +160,10 @@ libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
 libasmlib.a: CMakeFiles/asmlib.dir/build.make
 libasmlib.a: CMakeFiles/asmlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libasmlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libasmlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/asmlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/asmlib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -176,6 +183,7 @@ CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 	cd /home/mellw/CLionProjects/asmlib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mellw/CLionProjects/asmlib /home/mellw/CLionProjects/asmlib /home/mellw/CLionProjects/asmlib/build /home/mellw/CLionProjects/asmlib/build /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/asmlib.dir/depend

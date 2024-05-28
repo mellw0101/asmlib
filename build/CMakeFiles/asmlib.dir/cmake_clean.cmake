@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_str.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_strlen.o"
   "CMakeFiles/asmlib.dir/src/lib.c.o"
   "CMakeFiles/asmlib.dir/src/lib.c.o.d"

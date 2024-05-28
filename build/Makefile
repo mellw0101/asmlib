@@ -279,6 +279,19 @@ asm_exit/fast:
 .PHONY : asm_exit/fast
 
 #=============================================================================
+# Target rules for targets named asm_string_struct
+
+# Build rule for target.
+asm_string_struct: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_string_struct
+.PHONY : asm_string_struct
+
+# fast build rule for target.
+asm_string_struct/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_string_struct.dir/build.make CMakeFiles/asm_string_struct.dir/build
+.PHONY : asm_string_struct/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -335,6 +348,7 @@ help:
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
 	@echo "... asm_strcpy"
+	@echo "... asm_string_struct"
 	@echo "... asm_strlen"
 	@echo "... asmlib"
 	@echo "... src/lib.o"

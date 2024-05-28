@@ -7,6 +7,7 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_malloc.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_append_str.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_exit.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_string_struct.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/edit_cache.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/rebuild_cache.dir

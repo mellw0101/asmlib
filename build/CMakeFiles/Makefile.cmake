@@ -49,5 +49,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/asm_malloc.dir/DependInfo.cmake"
   "CMakeFiles/asm_append_str.dir/DependInfo.cmake"
   "CMakeFiles/asm_exit.dir/DependInfo.cmake"
+  "CMakeFiles/asm_string_struct.dir/DependInfo.cmake"
   "CMakeFiles/asmlib.dir/DependInfo.cmake"
   )

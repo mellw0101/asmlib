@@ -72,6 +72,7 @@ all: CMakeFiles/asm_print_int.dir/all
 all: CMakeFiles/asm_malloc.dir/all
 all: CMakeFiles/asm_append_str.dir/all
 all: CMakeFiles/asm_exit.dir/all
+all: CMakeFiles/asm_string_struct.dir/all
 all: CMakeFiles/asmlib.dir/all
 .PHONY : all
 
@@ -89,6 +90,7 @@ clean: CMakeFiles/asm_print_int.dir/clean
 clean: CMakeFiles/asm_malloc.dir/clean
 clean: CMakeFiles/asm_append_str.dir/clean
 clean: CMakeFiles/asm_exit.dir/clean
+clean: CMakeFiles/asm_string_struct.dir/clean
 clean: CMakeFiles/asmlib.dir/clean
 .PHONY : clean
 
@@ -99,7 +101,7 @@ clean: CMakeFiles/asmlib.dir/clean
 CMakeFiles/asm_strlen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_strlen.dir/build.make CMakeFiles/asm_strlen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_strlen.dir/build.make CMakeFiles/asm_strlen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=9 "Built target asm_strlen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=10 "Built target asm_strlen"
 .PHONY : CMakeFiles/asm_strlen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -327,18 +329,44 @@ CMakeFiles/asm_exit.dir/clean:
 .PHONY : CMakeFiles/asm_exit.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/asm_string_struct.dir
+
+# All Build rule for target.
+CMakeFiles/asm_string_struct.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_string_struct.dir/build.make CMakeFiles/asm_string_struct.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_string_struct.dir/build.make CMakeFiles/asm_string_struct.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=9 "Built target asm_string_struct"
+.PHONY : CMakeFiles/asm_string_struct.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/asm_string_struct.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mellw/CLionProjects/asmlib/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/asm_string_struct.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mellw/CLionProjects/asmlib/build/CMakeFiles 0
+.PHONY : CMakeFiles/asm_string_struct.dir/rule
+
+# Convenience name for target.
+asm_string_struct: CMakeFiles/asm_string_struct.dir/rule
+.PHONY : asm_string_struct
+
+# clean rule for target.
+CMakeFiles/asm_string_struct.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_string_struct.dir/build.make CMakeFiles/asm_string_struct.dir/clean
+.PHONY : CMakeFiles/asm_string_struct.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/asmlib.dir
 
 # All Build rule for target.
 CMakeFiles/asmlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asmlib.dir/build.make CMakeFiles/asmlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/asmlib.dir/build.make CMakeFiles/asmlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20 "Built target asmlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20,21,22 "Built target asmlib"
 .PHONY : CMakeFiles/asmlib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/asmlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mellw/CLionProjects/asmlib/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mellw/CLionProjects/asmlib/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/asmlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mellw/CLionProjects/asmlib/build/CMakeFiles 0
 .PHONY : CMakeFiles/asmlib.dir/rule
