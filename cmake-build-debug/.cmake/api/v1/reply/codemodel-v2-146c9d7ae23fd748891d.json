@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d5ef7aa201a82ab64866.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "asmlib",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_append_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_append_str-Debug-0873b3ff5a492e7fcc70.json",
+					"name" : "asm_append_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_assert::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_assert-Debug-5dace2b222e83ed24743.json",
+					"name" : "asm_assert",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_execve::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_execve-Debug-46bcdb4d9415b9302a24.json",
+					"name" : "asm_execve",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_exit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_exit-Debug-e5d27d508cb0c11fb12d.json",
+					"name" : "asm_exit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_malloc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_malloc-Debug-06d1524ffdb66304fbc1.json",
+					"name" : "asm_malloc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_print_int::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_print_int-Debug-5c97fedb51dbf97f4d61.json",
+					"name" : "asm_print_int",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_print_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_print_str-Debug-5b9d42e1dc339c8eed34.json",
+					"name" : "asm_print_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_strcpy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_strcpy-Debug-73d4a4300f1ddba3f2e5.json",
+					"name" : "asm_strcpy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_strlen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_strlen-Debug-efab570a7ac453a721cd.json",
+					"name" : "asm_strlen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asmlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asmlib-Debug-f36da3b2801a48d82338.json",
+					"name" : "asmlib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mellw/CLionProjects/asmlib/cmake-build-debug",
+		"source" : "/home/mellw/CLionProjects/asmlib"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
