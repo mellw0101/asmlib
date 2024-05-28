@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "/home/mellw/CLionProjects/asmlib/obj/asm_assert.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_execve.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_exit.o"
-  "/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_free.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_str.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o"

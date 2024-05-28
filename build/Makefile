@@ -240,17 +240,17 @@ asm_print_int/fast:
 .PHONY : asm_print_int/fast
 
 #=============================================================================
-# Target rules for targets named asm_malloc
+# Target rules for targets named asm_free
 
 # Build rule for target.
-asm_malloc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_malloc
-.PHONY : asm_malloc
+asm_free: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_free
+.PHONY : asm_free
 
 # fast build rule for target.
-asm_malloc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_malloc.dir/build.make CMakeFiles/asm_malloc.dir/build
-.PHONY : asm_malloc/fast
+asm_free/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_free.dir/build.make CMakeFiles/asm_free.dir/build
+.PHONY : asm_free/fast
 
 #=============================================================================
 # Target rules for targets named asm_append_str
@@ -344,7 +344,7 @@ help:
 	@echo "... asm_assert"
 	@echo "... asm_execve"
 	@echo "... asm_exit"
-	@echo "... asm_malloc"
+	@echo "... asm_free"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
 	@echo "... asm_strcpy"

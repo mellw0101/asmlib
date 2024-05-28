@@ -28,6 +28,18 @@ function(assemble_asm_files file_prefixes)
         endforeach()
 endfunction()
 
+function(check_include_path include_path)
+        if(NOT EXISTS ${include_path})
+                message(FATAL_ERROR "Include path ${include_path} does not exist")
+        endif()
+endfunction()
+
+# Check if the include path exists
+check_include_path(${CMAKE_SOURCE_DIR}/include)
+check_include_path(${CMAKE_SOURCE_DIR}/src)
+
+
+
 # List of assembly files without extension
 set(asm_files
         asm_strlen
@@ -36,7 +48,7 @@ set(asm_files
         asm_assert
         asm_strcpy
         asm_print_int
-        asm_malloc
+        asm_free
         asm_append_str
         asm_exit
         asm_string_struct
@@ -47,6 +59,7 @@ assemble_asm_files("${asm_files}")
 
 set(LIB_HEADERS
         ${CMAKE_SOURCE_DIR}/src/lib.h
+        ${CMAKE_SOURCE_DIR}/src/asm_string.h
 )
 # Create the static library
 file(GLOB CLIB_SOURCES
@@ -60,7 +73,7 @@ add_library(asmlib STATIC
         ${CMAKE_SOURCE_DIR}/obj/asm_strlen.o
         ${CMAKE_SOURCE_DIR}/obj/asm_strcpy.o
         ${CMAKE_SOURCE_DIR}/obj/asm_print_int.o
-        ${CMAKE_SOURCE_DIR}/obj/asm_malloc.o
+        ${CMAKE_SOURCE_DIR}/obj/asm_free.o
         ${CMAKE_SOURCE_DIR}/obj/asm_append_str.o
         ${CMAKE_SOURCE_DIR}/obj/asm_exit.o
         ${CMAKE_SOURCE_DIR}/obj/asm_string_struct.o

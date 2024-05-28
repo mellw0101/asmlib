@@ -4,7 +4,7 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_assert.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_strcpy.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_print_int.dir
-/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_malloc.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_free.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_append_str.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_exit.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_string_struct.dir

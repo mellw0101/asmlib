@@ -99,10 +99,10 @@ include CMakeFiles/asmlib.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_print_int.asm to /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o"
 	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/src/asm_print_int.asm
 
-/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o: /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm
-/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm to /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o"
-	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/src/asm_malloc.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_free.o: /home/mellw/CLionProjects/asmlib/src/asm_free.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_free.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_free.asm to /home/mellw/CLionProjects/asmlib/obj/asm_free.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_free.o /home/mellw/CLionProjects/asmlib/src/asm_free.asm
 
 /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o: /home/mellw/CLionProjects/asmlib/src/asm_append_str.asm
 /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
@@ -145,7 +145,7 @@ asmlib_EXTERNAL_OBJECTS = \
 "/home/mellw/CLionProjects/asmlib/obj/asm_strlen.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o" \
-"/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_free.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_append_str.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_exit.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o"
@@ -157,7 +157,7 @@ libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
-libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_free.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
@@ -179,7 +179,7 @@ CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_append_st
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
-CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_free.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
