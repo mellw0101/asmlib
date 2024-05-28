@@ -1,0 +1,2 @@
+/usr/include/asmlib/lib.h
+/usr/lib/libasmlib.a

@@ -1,0 +1,8 @@
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/compile_asm_strlen.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/compile_asm_print_str.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/compile_asm_execve.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/compile_asm_assert.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/compile_asm_strcpy.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/asmlib.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mellw/CLionProjects/asmlib/cmake-build-debug/CMakeFiles/rebuild_cache.dir
