@@ -16,15 +16,14 @@ asm_find:
     ; Returns: index of the first occurrence of the character, or (size_t)-1 if not found
     ;
     FUNC_START_FULL
-    xor rcx, rcx                ; Clear the index register (rcx)
-
+    xor rcx, rcx                        ; Clear the index register (rcx)
     .loop:
-        cmp byte [rdi+rcx], 0     ; If the current character is 0
-        jz .not_found               ; Jump to .not_found if end of string
-        cmp byte [rdi+rcx], sil   ; Compare the character with 'sil'
-        jz .found                   ; Jump to .found if match
-        inc rcx                     ; Increment the index
-        jmp .loop                   ; Loop again
+        cmp byte [rdi+rcx], 0           ; If the current character is 0
+        jz .not_found                   ; Jump to .not_found if end of string
+        cmp byte [rdi+rcx], sil         ; Compare the character with 'sil'
+        jz .found                       ; Jump to .found if match
+        inc rcx                         ; Increment the index
+        jmp .loop                       ; Loop again
 
     .not_found:
         lea rdi, [rel err_not_found]    ; Load the address of the error message

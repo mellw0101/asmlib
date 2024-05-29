@@ -461,6 +461,58 @@ asm_find_str_end/fast:
 .PHONY : asm_find_str_end/fast
 
 #=============================================================================
+# Target rules for targets named asm_clear_str
+
+# Build rule for target.
+asm_clear_str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_clear_str
+.PHONY : asm_clear_str
+
+# fast build rule for target.
+asm_clear_str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_clear_str.dir/build.make CMakeFiles/asm_clear_str.dir/build
+.PHONY : asm_clear_str/fast
+
+#=============================================================================
+# Target rules for targets named asm_rm_file
+
+# Build rule for target.
+asm_rm_file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_rm_file
+.PHONY : asm_rm_file
+
+# fast build rule for target.
+asm_rm_file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_rm_file.dir/build.make CMakeFiles/asm_rm_file.dir/build
+.PHONY : asm_rm_file/fast
+
+#=============================================================================
+# Target rules for targets named asm_mkdir
+
+# Build rule for target.
+asm_mkdir: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_mkdir
+.PHONY : asm_mkdir
+
+# fast build rule for target.
+asm_mkdir/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_mkdir.dir/build.make CMakeFiles/asm_mkdir.dir/build
+.PHONY : asm_mkdir/fast
+
+#=============================================================================
+# Target rules for targets named asm_rm_dir
+
+# Build rule for target.
+asm_rm_dir: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_rm_dir
+.PHONY : asm_rm_dir
+
+# fast build rule for target.
+asm_rm_dir/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_rm_dir.dir/build.make CMakeFiles/asm_rm_dir.dir/build
+.PHONY : asm_rm_dir/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -512,6 +564,7 @@ help:
 	@echo "... asm_add"
 	@echo "... asm_append_str"
 	@echo "... asm_assert"
+	@echo "... asm_clear_str"
 	@echo "... asm_div"
 	@echo "... asm_errno"
 	@echo "... asm_execve"
@@ -520,9 +573,12 @@ help:
 	@echo "... asm_find_str_end"
 	@echo "... asm_get_cwd"
 	@echo "... asm_malloc"
+	@echo "... asm_mkdir"
 	@echo "... asm_mul"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
+	@echo "... asm_rm_dir"
+	@echo "... asm_rm_file"
 	@echo "... asm_strcpy"
 	@echo "... asm_string_struct"
 	@echo "... asm_strlen"

@@ -159,30 +159,50 @@ include CMakeFiles/asmlib.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_find_str_end.asm to /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o"
 	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o /home/mellw/CLionProjects/asmlib/src/asm_find_str_end.asm
 
+/home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o: /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm to /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm
+
+/home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o: /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm to /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm
+
+/home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o: /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm to /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm
+
+/home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o: /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm
+/home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o: /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm to /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o"
+	nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm
+
 /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o: /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll to /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll to /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o"
 	llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll
 
 /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o: /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll to /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll to /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o"
 	llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll
 
 /home/mellw/CLionProjects/asmlib/obj/ll_exit.o: /home/mellw/CLionProjects/asmlib/src/ll_exit.ll
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_exit.ll to /home/mellw/CLionProjects/asmlib/obj/ll_exit.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_exit.ll to /home/mellw/CLionProjects/asmlib/obj/ll_exit.o"
 	llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_exit.o /home/mellw/CLionProjects/asmlib/src/ll_exit.ll
 
 /home/mellw/CLionProjects/asmlib/obj/ll_add.o: /home/mellw/CLionProjects/asmlib/src/ll_add.ll
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_add.ll to /home/mellw/CLionProjects/asmlib/obj/ll_add.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_add.ll to /home/mellw/CLionProjects/asmlib/obj/ll_add.o"
 	llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_add.o /home/mellw/CLionProjects/asmlib/src/ll_add.ll
 
 /home/mellw/CLionProjects/asmlib/obj/ll_sub.o: /home/mellw/CLionProjects/asmlib/src/ll_sub.ll
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_sub.ll to /home/mellw/CLionProjects/asmlib/obj/ll_sub.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_sub.ll to /home/mellw/CLionProjects/asmlib/obj/ll_sub.o"
 	llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_sub.o /home/mellw/CLionProjects/asmlib/src/ll_sub.ll
 
 CMakeFiles/asmlib.dir/src/lib.c.o: CMakeFiles/asmlib.dir/flags.make
 CMakeFiles/asmlib.dir/src/lib.c.o: /home/mellw/CLionProjects/asmlib/src/lib.c
 CMakeFiles/asmlib.dir/src/lib.c.o: CMakeFiles/asmlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/asmlib.dir/src/lib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/asmlib.dir/src/lib.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/asmlib.dir/src/lib.c.o -MF CMakeFiles/asmlib.dir/src/lib.c.o.d -o CMakeFiles/asmlib.dir/src/lib.c.o -c /home/mellw/CLionProjects/asmlib/src/lib.c
 
 CMakeFiles/asmlib.dir/src/lib.c.i: cmake_force
@@ -217,6 +237,10 @@ asmlib_EXTERNAL_OBJECTS = \
 "/home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_find.o" \
 "/home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o" \
+"/home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o" \
 "/home/mellw/CLionProjects/asmlib/obj/ll_strlen.o" \
 "/home/mellw/CLionProjects/asmlib/obj/ll_print_str.o" \
 "/home/mellw/CLionProjects/asmlib/obj/ll_exit.o" \
@@ -242,6 +266,10 @@ libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_div.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_find.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
+libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/ll_exit.o
@@ -249,7 +277,7 @@ libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/ll_add.o
 libasmlib.a: /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
 libasmlib.a: CMakeFiles/asmlib.dir/build.make
 libasmlib.a: CMakeFiles/asmlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C static library libasmlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mellw/CLionProjects/asmlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C static library libasmlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/asmlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/asmlib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -264,6 +292,7 @@ CMakeFiles/asmlib.dir/clean:
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_add.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_div.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_execve.o
@@ -272,9 +301,12 @@ CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_find.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_mul.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
+CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
 CMakeFiles/asmlib.dir/depend: /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o

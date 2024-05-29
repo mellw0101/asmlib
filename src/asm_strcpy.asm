@@ -18,4 +18,5 @@ asm_strcpy:
         test al, al         ; Test if the byte is zero (null terminator)
         jnz .copy_loop      ; If not zero, continue copying
         mov rax, rdx        ; Return the original destination pointer
+
     __FUNC_END__

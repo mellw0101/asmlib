@@ -148,135 +148,70 @@
 ; r14   ; Additional General Purpose Register (64 bits)
 ; r15   ; Additional General Purpose Register (64 bits)
 
-; jmp   ; Jump Instruction - Unconditional jump to a specified address
-;       ;
-; jmp label  ; Jump to the specified label
-; jmp address  ; Jump to the specified address
-
-; je    ; Jump if Equal - Jump if the Zero Flag (ZF) is set
-;       ;
-; je label  ; Jump to the specified label if ZF is set
-
-; jne   ; Jump if Not Equal - Jump if the Zero Flag (ZF) is not set
-;       ;
-; jne label  ; Jump to the specified label if ZF is not set
-
-; jg    ; Jump if Greater - Jump if the Zero Flag (ZF) is not set and the Sign Flag (SF) equals the Overflow Flag (OF)
-;       ;
-; jg label  ; Jump to the specified label if ZF is not set and SF equals OF
-
-; jge   ; Jump if Greater or Equal - Jump if the Sign Flag (SF) equals the Overflow Flag (OF)
-;       ;
-; jge label  ; Jump to the specified label if SF equals OF
-
-; jl    ; Jump if Less - Jump if the Sign Flag (SF) does not equal the Overflow Flag (OF)
-;       ;
-; jl label  ; Jump to the specified label if SF does not equal OF
-
-; jle   ; Jump if Less or Equal - Jump if the Zero Flag (ZF) is set or the Sign Flag (SF) does not equal the Overflow Flag (OF)
-;       ;
-; jle label  ; Jump to the specified label if ZF is set or SF does not equal OF
-
-; jo    ; Jump if Overflow - Jump if the Overflow Flag (OF) is set
-
-; jno   ; Jump if Not Overflow - Jump if the Overflow Flag (OF) is not set
-
-; js    ; Jump if Sign - Jump if the Sign Flag (SF) is set
-
-; jns   ; Jump if Not Sign - Jump if the Sign Flag (SF) is not set
-
-; jc    ; Jump if Carry - Jump if the Carry Flag (CF) is set
-
-; jnc   ; Jump if Not Carry - Jump if the Carry Flag (CF) is not set
-
-; jz    ; Jump if Zero - Jump if the Zero Flag (ZF) is set
-
-; jnz   ; Jump if Not Zero - Jump if the Zero Flag (ZF) is not set 
-
-; call  ; Call Instruction - Call a function or subroutine
-
-; ret   ; Return Instruction - Return from a function or subroutine
-
-; mov   ; Move Instruction - Move data from one location to another
-
-; add   ; Add Instruction - Add two values
-
-; sub   ; Subtract Instruction - Subtract two values
-
-; mul   ; Multiply Instruction - Multiply two values
-
-; div   ; Divide Instruction - Divide two values
-
-; inc   ; Increment Instruction - Increment a value by 1
-
-; dec   ; Decrement Instruction - Decrement a value by 1
-
-; cmp   ; Compare Instruction - Compare two values
-
-; test  ; Test Instruction - Perform a bitwise AND operation
-
-; and   ; AND Instruction - Perform a bitwise AND operation
-
-; or    ; OR Instruction - Perform a bitwise OR operation
-
-; xor   ; XOR Instruction - Perform a bitwise XOR operation
-
-; shl   ; Shift Left Instruction - Shift the bits of a value to the left
-
-; shr   ; Shift Right Instruction - Shift the bits of a value to the right\
-
-; push  ; Push Instruction - Push a value onto the stack
-
-; pop   ; Pop Instruction - Pop a value from the stack
-
-; syscall ; System Call Instruction - Make a system call
-
-; lea   ; Load Effective Address Instruction - Load the effective address of a memory location
-
-; nop   ; No Operation Instruction - Do nothing
-
-; int   ; Interrupt Instruction - Generate a software interrupt
-
-; hlt   ; Halt Instruction - Halt the processor
-
-; loop  ; Loop Instruction - Loop a specified number of times
-
-; rep   ; Repeat Instruction - Repeat a string operation
-
-; movzx ; Move with Zero-Extend Instruction - Move with zero extension
-
-; movsx ; Move with Sign-Extend Instruction - Move with sign extension
-
-; movsb ; Move Byte Instruction - Move a byte from one location to another
-
-; movsw ; Move Word Instruction - Move a word from one location to another
-
-; movsd ; Move Doubleword Instruction - Move a doubleword from one location to another
-
-; movsq ; Move Quadword Instruction - Move a quadword from one location to another
-
-; movsbq ; Move Sign-Extended Byte Instruction - Move a sign-extended byte from one location to another
-
-; movswq ; Move Sign-Extended Word Instruction - Move a sign-extended word from one location to another
-
-; movslq ; Move Sign-Extended Doubleword Instruction - Move a sign-extended doubleword from one location to another
-
-; movsxd ; Move Doubleword with Sign-Extend Instruction - Move a doubleword with sign extension
-
-; movabs ; Move Immediate to Register Instruction - Move an immediate value to a register
-
-; movaps ; Move Aligned Packed Single-Precision Floating-Point Values Instruction - Move aligned packed single-precision floating-point values
-
-; movapd ; Move Aligned Packed Double-Precision Floating-Point Values Instruction - Move aligned packed double-precision floating-point values
-
-; movups ; Move Unaligned Packed Single-Precision Floating-Point Values Instruction - Move unaligned packed single-precision floating-point values
-
-; movupd ; Move Unaligned Packed Double-Precision Floating-Point Values Instruction - Move unaligned packed double-precision floating-point values
-
-; movntps ; Move Aligned Packed Single-Precision Floating-Point Values with Non-Temporal Hint Instruction - Move aligned packed single-precision floating-point values with non-temporal hint
-
-; movntpd ; Move Aligned Packed Double-Precision Floating-Point Values with Non-Temporal Hint Instruction - Move aligned packed double-precision floating-point values with non-temporal hint
-
-; movdqa ; Move Aligned Double Quadword Instruction - Move aligned double quadword
-
-; movdqu ; Move Unaligned Double Quadword Instruction - Move unaligned double quadword
+; jmp       ;               ; Jump Instruction - Unconditional jump to a specified address
+; jmp       ;   label       ; Jump to the specified label
+; jmp       ;   address     ; Jump to the specified address
+; je        ;               ; Jump if Equal - Jump if the Zero Flag (ZF) is set
+; je        ;   label       ; Jump to the specified label if ZF is set
+; jne       ;               ; Jump if Not Equal - Jump if the Zero Flag (ZF) is not set
+; jne       ;   label       ; Jump to the specified label if ZF is not set
+; jg        ;               ; Jump if Greater - Jump if the Zero Flag (ZF) is not set and the Sign Flag (SF) equals the Overflow Flag (OF)
+; jg        ;   label       ; Jump to the specified label if ZF is not set and SF equals OF
+; jge       ;               ; Jump if Greater or Equal - Jump if the Sign Flag (SF) equals the Overflow Flag (OF)
+; jge       ;   label       ; Jump to the specified label if SF equals OF
+; jl        ;               ; Jump if Less - Jump if the Sign Flag (SF) does not equal the Overflow Flag (OF)
+; jl        ;   label       ; Jump to the specified label if SF does not equal OF
+; jle       ;               ; Jump if Less or Equal - Jump if the Zero Flag (ZF) is set or the Sign Flag (SF) does not equal the Overflow Flag (OF)
+; jle       ;   label       ; Jump to the specified label if ZF is set or SF does not equal OF
+; jo        ;               ; Jump if Overflow - Jump if the Overflow Flag (OF) is set
+; jno       ;               ; Jump if Not Overflow - Jump if the Overflow Flag (OF) is not set
+; js        ;               ; Jump if Sign - Jump if the Sign Flag (SF) is set
+; jns       ;               ; Jump if Not Sign - Jump if the Sign Flag (SF) is not set
+; jc        ;               ; Jump if Carry - Jump if the Carry Flag (CF) is set
+; jnc       ;               ; Jump if Not Carry - Jump if the Carry Flag (CF) is not set
+; jz        ;               ; Jump if Zero - Jump if the Zero Flag (ZF) is set
+; jnz       ;               ; Jump if Not Zero - Jump if the Zero Flag (ZF) is not set 
+; call      ;               ; Call Instruction - Call a function or subroutine
+; ret       ;               ; Return Instruction - Return from a function or subroutine
+; mov       ;               ; Move Instruction - Move data from one location to another
+; add       ;               ; Add Instruction - Add two values
+; sub       ;               ; Subtract Instruction - Subtract two values
+; mul       ;               ; Multiply Instruction - Multiply two values
+; div       ;               ; Divide Instruction - Divide two values
+; inc       ;               ; Increment Instruction - Increment a value by 1
+; dec       ;               ; Decrement Instruction - Decrement a value by 1
+; cmp       ;               ; Compare Instruction - Compare two values
+; test      ;               ; Test Instruction - Perform a bitwise AND operation and update the flags register
+; and       ;               ; AND Instruction - Perform a bitwise AND operation
+; or        ;               ; OR Instruction - Perform a bitwise OR operation
+; xor       ;               ; XOR Instruction - Perform a bitwise XOR operation
+; shl       ;               ; Shift Left Instruction - Shift the bits of a value to the left
+; shr       ;               ; Shift Right Instruction - Shift the bits of a value to the right\
+; push      ;               ; Push Instruction - Push a value onto the stack
+; pop       ;               ; Pop Instruction - Pop a value from the stack
+; syscall   ;               ; System Call Instruction - Make a system call
+; lea       ;               ; Load Effective Address Instruction - Load the effective address of a memory location
+; nop       ;               ; No Operation Instruction - Do nothing
+; int       ;               ; Interrupt Instruction - Generate a software interrupt
+; hlt       ;               ; Halt Instruction - Halt the processor
+; loop      ;               ; Loop Instruction - Loop a specified number of times
+; rep       ;               ; Repeat Instruction - Repeat a string operation
+; movzx     ;               ; Move with Zero-Extend Instruction - Move with zero extension
+; movsx     ;               ; Move with Sign-Extend Instruction - Move with sign extension
+; movsb     ;               ; Move Byte Instruction - Move a byte from one location to another
+; movsw     ;               ; Move Word Instruction - Move a word from one location to another
+; movsd     ;               ; Move Doubleword Instruction - Move a doubleword from one location to another
+; movsq     ;               ; Move Quadword Instruction - Move a quadword from one location to another
+; movsbq    ;               ; Move Sign-Extended Byte Instruction - Move a sign-extended byte from one location to another
+; movswq    ;               ; Move Sign-Extended Word Instruction - Move a sign-extended word from one location to another
+; movslq    ;               ; Move Sign-Extended Doubleword Instruction - Move a sign-extended doubleword from one location to another
+; movsxd    ;               ; Move Doubleword with Sign-Extend Instruction - Move a doubleword with sign extension
+; movabs    ;               ; Move Immediate to Register Instruction - Move an immediate value to a register
+; movaps    ;               ; Move Aligned Packed Single-Precision Floating-Point Values Instruction - Move aligned packed single-precision floating-point values
+; movapd    ;               ; Move Aligned Packed Double-Precision Floating-Point Values Instruction - Move aligned packed double-precision floating-point values
+; movups    ;               ; Move Unaligned Packed Single-Precision Floating-Point Values Instruction - Move unaligned packed single-precision floating-point values
+; movupd    ;               ; Move Unaligned Packed Double-Precision Floating-Point Values Instruction - Move unaligned packed double-precision floating-point values
+; movntps   ;               ; Move Aligned Packed Single-Precision Floating-Point Values with Non-Temporal Hint Instruction - Move aligned packed single-precision floating-point values with non-temporal hint
+; movntpd   ;               ; Move Aligned Packed Double-Precision Floating-Point Values with Non-Temporal Hint Instruction - Move aligned packed double-precision floating-point values with non-temporal hint
+; movdqa    ;               ; Move Aligned Double Quadword Instruction - Move aligned double quadword
+; movdqu    ;               ; Move Unaligned Double Quadword Instruction - Move unaligned double quadword

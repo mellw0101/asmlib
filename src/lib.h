@@ -40,10 +40,15 @@ extern void asm_print_int(long num);
 extern void asm_exit(long status);
 extern char* asm_strcpy(char *__restrict _dest, const char *__restrict _src) __THROW __nonnull ((1, 2));
 extern void* asm_malloc(size_t size);
+extern void* asm_alloc(size_t size);
 extern void asm_append_str(char* str, const char* str_to_append);
 extern void asm_errno(const char* str);
 extern size_t asm_find(const char* str, char c);
 extern size_t asm_find_str_end(const char* str);
+extern size_t asm_clear_str(char* str);
+extern size_t asm_rm_file(const char* path) __nonnull ((1));
+extern size_t asm_rm_dir(const char* path) __nonnull ((1));
+extern size_t asm_mkdir(const char* path) __nonnull ((1));
 
 extern size_t asm_add(size_t a, size_t b);
 extern size_t asm_sub(size_t a, size_t b);
