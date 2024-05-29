@@ -34,6 +34,7 @@ extern void asm_exit(long status);
 extern char* asm_strcpy(char *__restrict _dest, const char *__restrict _src) __THROW __nonnull ((1, 2));
 extern void* asm_malloc(size_t size);
 extern void asm_append_str(char* str, const char* str_to_append);
+extern size_t ll_strlen(const char* str);
 
 //extern size_t asm_add(size_t a, size_t b);
 //extern size_t asm_sub(size_t a, size_t b);

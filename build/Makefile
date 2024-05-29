@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ll_strlen
+
+# Build rule for target.
+ll_strlen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ll_strlen
+.PHONY : ll_strlen
+
+# fast build rule for target.
+ll_strlen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ll_strlen.dir/build.make CMakeFiles/ll_strlen.dir/build
+.PHONY : ll_strlen/fast
+
+#=============================================================================
 # Target rules for targets named asm_strlen
 
 # Build rule for target.
@@ -240,17 +253,17 @@ asm_print_int/fast:
 .PHONY : asm_print_int/fast
 
 #=============================================================================
-# Target rules for targets named asm_free
+# Target rules for targets named asm_malloc
 
 # Build rule for target.
-asm_free: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_free
-.PHONY : asm_free
+asm_malloc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_malloc
+.PHONY : asm_malloc
 
 # fast build rule for target.
-asm_free/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_free.dir/build.make CMakeFiles/asm_free.dir/build
-.PHONY : asm_free/fast
+asm_malloc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_malloc.dir/build.make CMakeFiles/asm_malloc.dir/build
+.PHONY : asm_malloc/fast
 
 #=============================================================================
 # Target rules for targets named asm_append_str
@@ -344,12 +357,13 @@ help:
 	@echo "... asm_assert"
 	@echo "... asm_execve"
 	@echo "... asm_exit"
-	@echo "... asm_free"
+	@echo "... asm_malloc"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
 	@echo "... asm_strcpy"
 	@echo "... asm_string_struct"
 	@echo "... asm_strlen"
+	@echo "... ll_strlen"
 	@echo "... asmlib"
 	@echo "... src/lib.o"
 	@echo "... src/lib.i"
