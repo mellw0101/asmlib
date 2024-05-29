@@ -1,12 +1,11 @@
 {
-	"backtrace" : 3,
+	"backtrace" : 2,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
 			"add_custom_target",
-			"assemble_asm_file",
-			"assemble_asm_files"
+			"compile_ll_to_o"
 		],
 		"files" : 
 		[
@@ -18,27 +17,21 @@
 				"file" : 0
 			},
 			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 45,
-				"parent" : 0
-			},
-			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 27,
-				"parent" : 1
+				"line" : 66,
+				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 20,
-				"parent" : 2
+				"line" : 53,
+				"parent" : 1
 			}
 		]
 	},
-	"id" : "asm_exit::@6890427a1f51a3e7e1df",
-	"name" : "asm_exit",
+	"id" : "ll_add::@6890427a1f51a3e7e1df",
+	"name" : "ll_add",
 	"paths" : 
 	{
 		"build" : ".",
@@ -65,21 +58,21 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 3,
+			"backtrace" : 2,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/asm_exit",
+			"path" : "cmake-build-debug/CMakeFiles/ll_add",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/asm_exit.rule",
+			"path" : "cmake-build-debug/CMakeFiles/ll_add.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "obj/asm_exit.o.rule",
+			"path" : "obj/ll_add.o.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -1,14 +1,12 @@
 # ninja log v5
-15	54	1716841481096525085	libasmlib.a	b64e90c8a8c8c947
-1	15	1716841481059858419	CMakeFiles/asmlib.dir/src/lib.c.o	4389a994706063d3
 1	7	1716865305006475708	/home/mellw/CLionProjects/asmlib/obj/asm_strlen.o	60744018a68b5b9b
-2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o	e918318e840f6d90
-2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_print_str.o	8ed021f8953eba37
 2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o	667cd77d9fc06bbe
-2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_execve.o	92b475fe2c0802fe
-2	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o	5ce872dbd3f7d03d
-3	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_exit.o	7663ee80f5a04a4e
 3	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_append_str.o	70c3d54227d9d134
+3	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_exit.o	7663ee80f5a04a4e
+23	66	1716865305066475708	libasmlib.a	6d148178f5531f96
 2	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_assert.o	1907117469d97f22
 9	23	1716865305023142374	CMakeFiles/asmlib.dir/src/lib.c.o	4389a994706063d3
-23	66	1716865305066475708	libasmlib.a	6d148178f5531f96
+2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o	e918318e840f6d90
+2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_print_str.o	8ed021f8953eba37
+2	9	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o	5ce872dbd3f7d03d
+2	8	1716865305009809041	/home/mellw/CLionProjects/asmlib/obj/asm_execve.o	92b475fe2c0802fe

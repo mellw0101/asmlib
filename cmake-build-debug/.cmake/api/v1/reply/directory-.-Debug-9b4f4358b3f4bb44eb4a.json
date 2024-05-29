@@ -17,13 +17,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 66,
+				"line" : 153,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 69,
+				"line" : 157,
 				"parent" : 0
 			}
 		]
@@ -49,7 +49,7 @@
 				"libasmlib.a"
 			],
 			"targetId" : "asmlib::@6890427a1f51a3e7e1df",
-			"targetIndex" : 9,
+			"targetIndex" : 28,
 			"type" : "target"
 		}
 	],

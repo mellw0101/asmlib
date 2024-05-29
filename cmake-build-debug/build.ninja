@@ -42,6 +42,36 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /home/mellw/CLionProjects/asmlib/cmake-build-debug/
 
 #############################################
+# Utility command for ll_strlen
+
+build ll_strlen: phony CMakeFiles/ll_strlen /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o
+
+
+#############################################
+# Utility command for ll_print_str
+
+build ll_print_str: phony CMakeFiles/ll_print_str /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o
+
+
+#############################################
+# Utility command for ll_exit
+
+build ll_exit: phony CMakeFiles/ll_exit /home/mellw/CLionProjects/asmlib/obj/ll_exit.o
+
+
+#############################################
+# Utility command for ll_add
+
+build ll_add: phony CMakeFiles/ll_add /home/mellw/CLionProjects/asmlib/obj/ll_add.o
+
+
+#############################################
+# Utility command for ll_sub
+
+build ll_sub: phony CMakeFiles/ll_sub /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
+
+
+#############################################
 # Utility command for asm_strlen
 
 build asm_strlen: phony CMakeFiles/asm_strlen /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
@@ -94,6 +124,120 @@ build asm_append_str: phony CMakeFiles/asm_append_str /home/mellw/CLionProjects/
 
 build asm_exit: phony CMakeFiles/asm_exit /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
 
+
+#############################################
+# Utility command for asm_string_struct
+
+build asm_string_struct: phony CMakeFiles/asm_string_struct /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
+
+
+#############################################
+# Utility command for asm_add
+
+build asm_add: phony CMakeFiles/asm_add /home/mellw/CLionProjects/asmlib/obj/asm_add.o
+
+
+#############################################
+# Utility command for asm_sub
+
+build asm_sub: phony CMakeFiles/asm_sub /home/mellw/CLionProjects/asmlib/obj/asm_sub.o
+
+
+#############################################
+# Utility command for asm_mul
+
+build asm_mul: phony CMakeFiles/asm_mul /home/mellw/CLionProjects/asmlib/obj/asm_mul.o
+
+
+#############################################
+# Utility command for asm_div
+
+build asm_div: phony CMakeFiles/asm_div /home/mellw/CLionProjects/asmlib/obj/asm_div.o
+
+
+#############################################
+# Utility command for asm_errno
+
+build asm_errno: phony CMakeFiles/asm_errno /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
+
+
+#############################################
+# Utility command for asm_get_cwd
+
+build asm_get_cwd: phony CMakeFiles/asm_get_cwd /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
+
+
+#############################################
+# Utility command for asm_find
+
+build asm_find: phony CMakeFiles/asm_find /home/mellw/CLionProjects/asmlib/obj/asm_find.o
+
+
+#############################################
+# Utility command for asm_find_str_end
+
+build asm_find_str_end: phony CMakeFiles/asm_find_str_end /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
+
+
+#############################################
+# Utility command for asm_clear_str
+
+build asm_clear_str: phony CMakeFiles/asm_clear_str /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
+
+
+#############################################
+# Utility command for asm_rm_file
+
+build asm_rm_file: phony CMakeFiles/asm_rm_file /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
+
+
+#############################################
+# Utility command for asm_mkdir
+
+build asm_mkdir: phony CMakeFiles/asm_mkdir /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
+
+
+#############################################
+# Utility command for asm_rm_dir
+
+build asm_rm_dir: phony CMakeFiles/asm_rm_dir /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
+
+
+#############################################
+# Utility command for asm_cd
+
+build asm_cd: phony CMakeFiles/asm_cd /home/mellw/CLionProjects/asmlib/obj/asm_cd.o
+
+
+#############################################
+# Utility command for asm_printf
+
+build asm_printf: phony CMakeFiles/asm_printf /home/mellw/CLionProjects/asmlib/obj/asm_printf.o
+
+
+#############################################
+# Utility command for asm_print_char
+
+build asm_print_char: phony CMakeFiles/asm_print_char /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o
+
+
+#############################################
+# Utility command for asm_touch
+
+build asm_touch: phony CMakeFiles/asm_touch /home/mellw/CLionProjects/asmlib/obj/asm_touch.o
+
+
+#############################################
+# Utility command for asm_write
+
+build asm_write: phony CMakeFiles/asm_write /home/mellw/CLionProjects/asmlib/obj/asm_write.o
+
+
+#############################################
+# Utility command for asm_open_file
+
+build asm_open_file: phony CMakeFiles/asm_open_file /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o
+
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target asmlib
 
@@ -101,13 +245,15 @@ build asm_exit: phony CMakeFiles/asm_exit /home/mellw/CLionProjects/asmlib/obj/a
 #############################################
 # Order-only phony target for asmlib
 
-build cmake_object_order_depends_target_asmlib: phony || /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o
+build cmake_object_order_depends_target_asmlib: phony || /home/mellw/CLionProjects/asmlib/obj/asm_add.o /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_cd.o /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o /home/mellw/CLionProjects/asmlib/obj/asm_div.o /home/mellw/CLionProjects/asmlib/obj/asm_errno.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/obj/asm_find.o /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o /home/mellw/CLionProjects/asmlib/obj/asm_mul.o /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_printf.o /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o /home/mellw/CLionProjects/asmlib/obj/asm_sub.o /home/mellw/CLionProjects/asmlib/obj/asm_touch.o /home/mellw/CLionProjects/asmlib/obj/asm_write.o /home/mellw/CLionProjects/asmlib/obj/ll_add.o /home/mellw/CLionProjects/asmlib/obj/ll_exit.o /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
 
 build CMakeFiles/asmlib.dir/src/lib.c.o: C_COMPILER__asmlib_unscanned_Debug /home/mellw/CLionProjects/asmlib/src/lib.c || cmake_object_order_depends_target_asmlib
   DEP_FILE = CMakeFiles/asmlib.dir/src/lib.c.o.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/asmlib.dir
   OBJECT_FILE_DIR = CMakeFiles/asmlib.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/asmlib.dir/asmlib.pdb
+  TARGET_PDB = libasmlib.pdb
 
 
 # =============================================================================
@@ -117,13 +263,14 @@ build CMakeFiles/asmlib.dir/src/lib.c.o: C_COMPILER__asmlib_unscanned_Debug /hom
 #############################################
 # Link the static library libasmlib.a
 
-build libasmlib.a: C_STATIC_LIBRARY_LINKER__asmlib_Debug /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o CMakeFiles/asmlib.dir/src/lib.c.o
+build libasmlib.a: C_STATIC_LIBRARY_LINKER__asmlib_Debug /home/mellw/CLionProjects/asmlib/obj/asm_assert.o /home/mellw/CLionProjects/asmlib/obj/asm_execve.o /home/mellw/CLionProjects/asmlib/obj/asm_print_str.o /home/mellw/CLionProjects/asmlib/obj/asm_strlen.o /home/mellw/CLionProjects/asmlib/obj/asm_strcpy.o /home/mellw/CLionProjects/asmlib/obj/asm_print_int.o /home/mellw/CLionProjects/asmlib/obj/asm_malloc.o /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o /home/mellw/CLionProjects/asmlib/obj/asm_exit.o /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o /home/mellw/CLionProjects/asmlib/obj/asm_errno.o /home/mellw/CLionProjects/asmlib/obj/asm_add.o /home/mellw/CLionProjects/asmlib/obj/asm_sub.o /home/mellw/CLionProjects/asmlib/obj/asm_mul.o /home/mellw/CLionProjects/asmlib/obj/asm_div.o /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o /home/mellw/CLionProjects/asmlib/obj/asm_find.o /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o /home/mellw/CLionProjects/asmlib/obj/asm_cd.o /home/mellw/CLionProjects/asmlib/obj/asm_printf.o /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o /home/mellw/CLionProjects/asmlib/obj/asm_touch.o /home/mellw/CLionProjects/asmlib/obj/asm_write.o /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o /home/mellw/CLionProjects/asmlib/obj/ll_exit.o /home/mellw/CLionProjects/asmlib/obj/ll_add.o /home/mellw/CLionProjects/asmlib/obj/ll_sub.o CMakeFiles/asmlib.dir/src/lib.c.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/asmlib.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/asmlib.dir/asmlib.pdb
   TARGET_FILE = libasmlib.a
-  TARGET_PDB = asmlib.a.dbg
+  TARGET_PDB = libasmlib.pdb
 
 
 #############################################
@@ -190,6 +337,81 @@ build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
   restat = 1
 
 build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Phony custom command for CMakeFiles/ll_strlen
+
+build CMakeFiles/ll_strlen | ${cmake_ninja_workdir}CMakeFiles/ll_strlen: phony /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o
+
+build /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll
+  DESC = Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_strlen.ll to /home/mellw/CLionProjects/asmlib/obj/ll_strlen.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/ll_print_str
+
+build CMakeFiles/ll_print_str | ${cmake_ninja_workdir}CMakeFiles/ll_print_str: phony /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o
+
+build /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll
+  DESC = Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_print_str.ll to /home/mellw/CLionProjects/asmlib/obj/ll_print_str.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/ll_exit
+
+build CMakeFiles/ll_exit | ${cmake_ninja_workdir}CMakeFiles/ll_exit: phony /home/mellw/CLionProjects/asmlib/obj/ll_exit.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/ll_exit.o
+
+build /home/mellw/CLionProjects/asmlib/obj/ll_exit.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/ll_exit.ll
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_exit.o /home/mellw/CLionProjects/asmlib/src/ll_exit.ll
+  DESC = Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_exit.ll to /home/mellw/CLionProjects/asmlib/obj/ll_exit.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/ll_add
+
+build CMakeFiles/ll_add | ${cmake_ninja_workdir}CMakeFiles/ll_add: phony /home/mellw/CLionProjects/asmlib/obj/ll_add.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/ll_add.o
+
+build /home/mellw/CLionProjects/asmlib/obj/ll_add.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/ll_add.ll
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_add.o /home/mellw/CLionProjects/asmlib/src/ll_add.ll
+  DESC = Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_add.ll to /home/mellw/CLionProjects/asmlib/obj/ll_add.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/ll_sub
+
+build CMakeFiles/ll_sub | ${cmake_ninja_workdir}CMakeFiles/ll_sub: phony /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
+
+build /home/mellw/CLionProjects/asmlib/obj/ll_sub.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/ll_sub.ll
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && llc -filetype=obj -o /home/mellw/CLionProjects/asmlib/obj/ll_sub.o /home/mellw/CLionProjects/asmlib/src/ll_sub.ll
+  DESC = Compiling LLVM source file: /home/mellw/CLionProjects/asmlib/src/ll_sub.ll to /home/mellw/CLionProjects/asmlib/obj/ll_sub.o
+  restat = 1
 
 
 #############################################
@@ -326,6 +548,291 @@ build /home/mellw/CLionProjects/asmlib/obj/asm_exit.o: CUSTOM_COMMAND /home/mell
   DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_exit.asm to /home/mellw/CLionProjects/asmlib/obj/asm_exit.o
   restat = 1
 
+
+#############################################
+# Phony custom command for CMakeFiles/asm_string_struct
+
+build CMakeFiles/asm_string_struct | ${cmake_ninja_workdir}CMakeFiles/asm_string_struct: phony /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_string_struct.asm to /home/mellw/CLionProjects/asmlib/obj/asm_string_struct.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_add
+
+build CMakeFiles/asm_add | ${cmake_ninja_workdir}CMakeFiles/asm_add: phony /home/mellw/CLionProjects/asmlib/obj/asm_add.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_add.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_add.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_add.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_add.o /home/mellw/CLionProjects/asmlib/src/asm_add.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_add.asm to /home/mellw/CLionProjects/asmlib/obj/asm_add.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_sub
+
+build CMakeFiles/asm_sub | ${cmake_ninja_workdir}CMakeFiles/asm_sub: phony /home/mellw/CLionProjects/asmlib/obj/asm_sub.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_sub.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_sub.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_sub.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_sub.o /home/mellw/CLionProjects/asmlib/src/asm_sub.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_sub.asm to /home/mellw/CLionProjects/asmlib/obj/asm_sub.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_mul
+
+build CMakeFiles/asm_mul | ${cmake_ninja_workdir}CMakeFiles/asm_mul: phony /home/mellw/CLionProjects/asmlib/obj/asm_mul.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_mul.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_mul.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_mul.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_mul.o /home/mellw/CLionProjects/asmlib/src/asm_mul.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_mul.asm to /home/mellw/CLionProjects/asmlib/obj/asm_mul.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_div
+
+build CMakeFiles/asm_div | ${cmake_ninja_workdir}CMakeFiles/asm_div: phony /home/mellw/CLionProjects/asmlib/obj/asm_div.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_div.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_div.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_div.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_div.o /home/mellw/CLionProjects/asmlib/src/asm_div.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_div.asm to /home/mellw/CLionProjects/asmlib/obj/asm_div.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_errno
+
+build CMakeFiles/asm_errno | ${cmake_ninja_workdir}CMakeFiles/asm_errno: phony /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_errno.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_errno.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_errno.o /home/mellw/CLionProjects/asmlib/src/asm_errno.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_errno.asm to /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_get_cwd
+
+build CMakeFiles/asm_get_cwd | ${cmake_ninja_workdir}CMakeFiles/asm_get_cwd: phony /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_get_cwd.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o /home/mellw/CLionProjects/asmlib/src/asm_get_cwd.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_get_cwd.asm to /home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_find
+
+build CMakeFiles/asm_find | ${cmake_ninja_workdir}CMakeFiles/asm_find: phony /home/mellw/CLionProjects/asmlib/obj/asm_find.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_find.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_find.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_find.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_find.o /home/mellw/CLionProjects/asmlib/src/asm_find.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_find.asm to /home/mellw/CLionProjects/asmlib/obj/asm_find.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_find_str_end
+
+build CMakeFiles/asm_find_str_end | ${cmake_ninja_workdir}CMakeFiles/asm_find_str_end: phony /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_find_str_end.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o /home/mellw/CLionProjects/asmlib/src/asm_find_str_end.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_find_str_end.asm to /home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_clear_str
+
+build CMakeFiles/asm_clear_str | ${cmake_ninja_workdir}CMakeFiles/asm_clear_str: phony /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_clear_str.asm to /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_rm_file
+
+build CMakeFiles/asm_rm_file | ${cmake_ninja_workdir}CMakeFiles/asm_rm_file: phony /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_rm_file.asm to /home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_mkdir
+
+build CMakeFiles/asm_mkdir | ${cmake_ninja_workdir}CMakeFiles/asm_mkdir: phony /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_mkdir.asm to /home/mellw/CLionProjects/asmlib/obj/asm_mkdir.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_rm_dir
+
+build CMakeFiles/asm_rm_dir | ${cmake_ninja_workdir}CMakeFiles/asm_rm_dir: phony /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_rm_dir.asm to /home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_cd
+
+build CMakeFiles/asm_cd | ${cmake_ninja_workdir}CMakeFiles/asm_cd: phony /home/mellw/CLionProjects/asmlib/obj/asm_cd.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_cd.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_cd.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_cd.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_cd.o /home/mellw/CLionProjects/asmlib/src/asm_cd.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_cd.asm to /home/mellw/CLionProjects/asmlib/obj/asm_cd.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_printf
+
+build CMakeFiles/asm_printf | ${cmake_ninja_workdir}CMakeFiles/asm_printf: phony /home/mellw/CLionProjects/asmlib/obj/asm_printf.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_printf.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_printf.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_printf.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_printf.o /home/mellw/CLionProjects/asmlib/src/asm_printf.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_printf.asm to /home/mellw/CLionProjects/asmlib/obj/asm_printf.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_print_char
+
+build CMakeFiles/asm_print_char | ${cmake_ninja_workdir}CMakeFiles/asm_print_char: phony /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_print_char.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o /home/mellw/CLionProjects/asmlib/src/asm_print_char.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_print_char.asm to /home/mellw/CLionProjects/asmlib/obj/asm_print_char.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_touch
+
+build CMakeFiles/asm_touch | ${cmake_ninja_workdir}CMakeFiles/asm_touch: phony /home/mellw/CLionProjects/asmlib/obj/asm_touch.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_touch.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_touch.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_touch.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_touch.o /home/mellw/CLionProjects/asmlib/src/asm_touch.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_touch.asm to /home/mellw/CLionProjects/asmlib/obj/asm_touch.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_write
+
+build CMakeFiles/asm_write | ${cmake_ninja_workdir}CMakeFiles/asm_write: phony /home/mellw/CLionProjects/asmlib/obj/asm_write.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_write.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_write.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_write.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_write.o /home/mellw/CLionProjects/asmlib/src/asm_write.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_write.asm to /home/mellw/CLionProjects/asmlib/obj/asm_write.o
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/asm_open_file
+
+build CMakeFiles/asm_open_file | ${cmake_ninja_workdir}CMakeFiles/asm_open_file: phony /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o
+
+
+#############################################
+# Custom command for /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o
+
+build /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o: CUSTOM_COMMAND /home/mellw/CLionProjects/asmlib/src/asm_open_file.asm /home/mellw/CLionProjects/asmlib/src/asm_macros.inc
+  COMMAND = cd /home/mellw/CLionProjects/asmlib/cmake-build-debug && nasm -f elf64 -o /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o /home/mellw/CLionProjects/asmlib/src/asm_open_file.asm
+  DESC = Compiling NASM source file: /home/mellw/CLionProjects/asmlib/src/asm_open_file.asm to /home/mellw/CLionProjects/asmlib/obj/asm_open_file.o
+  restat = 1
+
 # =============================================================================
 # Target aliases.
 
@@ -339,7 +846,7 @@ build asmlib: phony libasmlib.a
 #############################################
 # Folder: /home/mellw/CLionProjects/asmlib/cmake-build-debug
 
-build all: phony asm_strlen asm_print_str asm_execve asm_assert asm_strcpy asm_print_int asm_malloc asm_append_str asm_exit libasmlib.a
+build all: phony ll_strlen ll_print_str ll_exit ll_add ll_sub asm_strlen asm_print_str asm_execve asm_assert asm_strcpy asm_print_int asm_malloc asm_append_str asm_exit asm_string_struct asm_add asm_sub asm_mul asm_div asm_errno asm_get_cwd asm_find asm_find_str_end asm_clear_str asm_rm_file asm_mkdir asm_rm_dir asm_cd asm_printf asm_print_char asm_touch asm_write asm_open_file libasmlib.a
 
 # =============================================================================
 # Built-in targets
@@ -348,14 +855,14 @@ build all: phony asm_strlen asm_print_str asm_execve asm_assert asm_strcpy asm_p
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/mellw/CLionProjects/asmlib/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/mellw/CLionProjects/asmlib/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/mellw/CLionProjects/asmlib/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake: phony
+build /home/mellw/CLionProjects/asmlib/CMakeLists.txt /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake: phony
 
 
 #############################################

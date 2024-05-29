@@ -43,6 +43,8 @@ extern size_t asm_assert(size_t a, size_t b, const char* msg);
 #endif
 extern size_t asm_execve(const char* path, char* const* argv[], char* const* env[]) __nonnull ((1, 2));
 extern size_t asm_print_str(const char* str);
+extern size_t asm_printnl();
+extern size_t asm_cin(char* buf, size_t size);
 extern size_t asm_printf(const char* str, ...);
 extern size_t asm_print_char(char c);
 extern size_t asm_strlen(const char* str);

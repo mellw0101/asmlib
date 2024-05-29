@@ -73,5 +73,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/asm_touch.dir/DependInfo.cmake"
   "CMakeFiles/asm_write.dir/DependInfo.cmake"
   "CMakeFiles/asm_open_file.dir/DependInfo.cmake"
+  "CMakeFiles/asm_cin.dir/DependInfo.cmake"
   "CMakeFiles/asmlib.dir/DependInfo.cmake"
   )

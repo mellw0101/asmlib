@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/mellw/CLionProjects/asmlib/obj/asm_append_str.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_assert.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_cd.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_cin.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_div.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_errno.o"

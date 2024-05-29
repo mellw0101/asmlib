@@ -96,6 +96,7 @@ set(asm_files
     asm_touch
     asm_write
     asm_open_file
+    asm_cin
 )
 
 # Call the function with the list of assembly files
@@ -142,6 +143,7 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_touch.o
     ${CMAKE_SOURCE_DIR}/obj/asm_write.o
     ${CMAKE_SOURCE_DIR}/obj/asm_open_file.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_cin.o
     
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
     ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o

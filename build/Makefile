@@ -591,6 +591,19 @@ asm_open_file/fast:
 .PHONY : asm_open_file/fast
 
 #=============================================================================
+# Target rules for targets named asm_cin
+
+# Build rule for target.
+asm_cin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_cin
+.PHONY : asm_cin
+
+# fast build rule for target.
+asm_cin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_cin.dir/build.make CMakeFiles/asm_cin.dir/build
+.PHONY : asm_cin/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -643,6 +656,7 @@ help:
 	@echo "... asm_append_str"
 	@echo "... asm_assert"
 	@echo "... asm_cd"
+	@echo "... asm_cin"
 	@echo "... asm_clear_str"
 	@echo "... asm_div"
 	@echo "... asm_errno"

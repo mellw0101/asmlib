@@ -31,6 +31,7 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_touch.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_write.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_open_file.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_cin.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/edit_cache.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/rebuild_cache.dir

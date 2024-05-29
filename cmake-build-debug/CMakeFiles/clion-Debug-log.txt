@@ -1,4 +1,17 @@
 /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/opt/clion-eap/bin/ninja/linux/x64/ninja -G Ninja -S /home/mellw/CLionProjects/asmlib -B /home/mellw/CLionProjects/asmlib/cmake-build-debug
+-- The C compiler identification is GNU 14.1.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Folder /home/mellw/CLionProjects/asmlib/obj exists
+-- Folder /home/mellw/CLionProjects/asmlib/src exists
+-- ll function def: ll_strlen
+-- ll function def: ll_print_str
+-- ll function def: ll_exit
+-- ll function def: ll_add
+-- ll function def: ll_sub
 -- asm function def: asm_strlen
 -- asm function def: asm_print_str
 -- asm function def: asm_execve
@@ -8,6 +21,25 @@
 -- asm function def: asm_malloc
 -- asm function def: asm_append_str
 -- asm function def: asm_exit
--- Configuring done (0.0s)
+-- asm function def: asm_string_struct
+-- asm function def: asm_add
+-- asm function def: asm_sub
+-- asm function def: asm_mul
+-- asm function def: asm_div
+-- asm function def: asm_errno
+-- asm function def: asm_get_cwd
+-- asm function def: asm_find
+-- asm function def: asm_find_str_end
+-- asm function def: asm_clear_str
+-- asm function def: asm_rm_file
+-- asm function def: asm_mkdir
+-- asm function def: asm_rm_dir
+-- asm function def: asm_cd
+-- asm function def: asm_printf
+-- asm function def: asm_print_char
+-- asm function def: asm_touch
+-- asm function def: asm_write
+-- asm function def: asm_open_file
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/mellw/CLionProjects/asmlib/cmake-build-debug

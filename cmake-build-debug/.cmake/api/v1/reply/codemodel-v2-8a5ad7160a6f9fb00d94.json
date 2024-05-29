@@ -1,0 +1,358 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9b4f4358b3f4bb44eb4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "asmlib",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_add::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_add-Debug-366a670d8c72837fdc92.json",
+					"name" : "asm_add",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_append_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_append_str-Debug-1eb8d111b450309c51c6.json",
+					"name" : "asm_append_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_assert::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_assert-Debug-299725e30e3dfaaa56d3.json",
+					"name" : "asm_assert",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_cd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_cd-Debug-c2aad7514e75a1bb2fe2.json",
+					"name" : "asm_cd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_clear_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_clear_str-Debug-51486b106a04d04fa178.json",
+					"name" : "asm_clear_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_div::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_div-Debug-407220a50e4d8ee2fc8c.json",
+					"name" : "asm_div",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_errno::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_errno-Debug-c25ca1c138b9ee3b9797.json",
+					"name" : "asm_errno",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_execve::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_execve-Debug-0e4fb8ff52d5a468b54c.json",
+					"name" : "asm_execve",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_exit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_exit-Debug-81a7785c91aac65f8564.json",
+					"name" : "asm_exit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_find::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_find-Debug-49a59ccd8df3230d5e70.json",
+					"name" : "asm_find",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_find_str_end::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_find_str_end-Debug-c55d3069ab00dd99d454.json",
+					"name" : "asm_find_str_end",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_get_cwd::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_get_cwd-Debug-3061dde6492c09fb8375.json",
+					"name" : "asm_get_cwd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_malloc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_malloc-Debug-e7f4582ac466041fc4d9.json",
+					"name" : "asm_malloc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_mkdir::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_mkdir-Debug-140bf4759dfaba3166b1.json",
+					"name" : "asm_mkdir",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_mul::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_mul-Debug-d3a6c5f351fad798b2b4.json",
+					"name" : "asm_mul",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_open_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_open_file-Debug-fd7bc5bbe76db428bab6.json",
+					"name" : "asm_open_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_print_char::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_print_char-Debug-785db7f24b27a5cd3f98.json",
+					"name" : "asm_print_char",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_print_int::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_print_int-Debug-b6a3f7d18a0042fbbfde.json",
+					"name" : "asm_print_int",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_print_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_print_str-Debug-948b299c8ef4527c7a72.json",
+					"name" : "asm_print_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_printf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_printf-Debug-2eea5bb44097e0d52676.json",
+					"name" : "asm_printf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_rm_dir::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_rm_dir-Debug-6db12478affcda5fb596.json",
+					"name" : "asm_rm_dir",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_rm_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_rm_file-Debug-ce3ea2d7379425bcda5c.json",
+					"name" : "asm_rm_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_strcpy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_strcpy-Debug-19b3c58169329f005072.json",
+					"name" : "asm_strcpy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_string_struct::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_string_struct-Debug-12a0e8b05d0716e8ce37.json",
+					"name" : "asm_string_struct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_strlen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_strlen-Debug-ee63159cb625acfe257b.json",
+					"name" : "asm_strlen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_sub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_sub-Debug-e0d175aef7906f3329c0.json",
+					"name" : "asm_sub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_touch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_touch-Debug-4029def017ed00e542d1.json",
+					"name" : "asm_touch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asm_write::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asm_write-Debug-5562a71699c0b8b10287.json",
+					"name" : "asm_write",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "asmlib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-asmlib-Debug-efdaec7c4aeab3a79685.json",
+					"name" : "asmlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ll_add::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ll_add-Debug-9f8198f750deaf0de3f6.json",
+					"name" : "ll_add",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ll_exit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ll_exit-Debug-31ae7adb8500c6725e8f.json",
+					"name" : "ll_exit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ll_print_str::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ll_print_str-Debug-c8fea52711e6d81e694d.json",
+					"name" : "ll_print_str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ll_strlen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ll_strlen-Debug-792744296250246bbf10.json",
+					"name" : "ll_strlen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ll_sub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ll_sub-Debug-d29948282cb263704d99.json",
+					"name" : "ll_sub",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mellw/CLionProjects/asmlib/cmake-build-debug",
+		"source" : "/home/mellw/CLionProjects/asmlib"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
