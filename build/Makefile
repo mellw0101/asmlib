@@ -175,6 +175,58 @@ ll_strlen/fast:
 .PHONY : ll_strlen/fast
 
 #=============================================================================
+# Target rules for targets named ll_print_str
+
+# Build rule for target.
+ll_print_str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ll_print_str
+.PHONY : ll_print_str
+
+# fast build rule for target.
+ll_print_str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ll_print_str.dir/build.make CMakeFiles/ll_print_str.dir/build
+.PHONY : ll_print_str/fast
+
+#=============================================================================
+# Target rules for targets named ll_exit
+
+# Build rule for target.
+ll_exit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ll_exit
+.PHONY : ll_exit
+
+# fast build rule for target.
+ll_exit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ll_exit.dir/build.make CMakeFiles/ll_exit.dir/build
+.PHONY : ll_exit/fast
+
+#=============================================================================
+# Target rules for targets named ll_add
+
+# Build rule for target.
+ll_add: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ll_add
+.PHONY : ll_add
+
+# fast build rule for target.
+ll_add/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ll_add.dir/build.make CMakeFiles/ll_add.dir/build
+.PHONY : ll_add/fast
+
+#=============================================================================
+# Target rules for targets named ll_sub
+
+# Build rule for target.
+ll_sub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ll_sub
+.PHONY : ll_sub
+
+# fast build rule for target.
+ll_sub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ll_sub.dir/build.make CMakeFiles/ll_sub.dir/build
+.PHONY : ll_sub/fast
+
+#=============================================================================
 # Target rules for targets named asm_strlen
 
 # Build rule for target.
@@ -305,6 +357,58 @@ asm_string_struct/fast:
 .PHONY : asm_string_struct/fast
 
 #=============================================================================
+# Target rules for targets named asm_add
+
+# Build rule for target.
+asm_add: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_add
+.PHONY : asm_add
+
+# fast build rule for target.
+asm_add/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_add.dir/build.make CMakeFiles/asm_add.dir/build
+.PHONY : asm_add/fast
+
+#=============================================================================
+# Target rules for targets named asm_sub
+
+# Build rule for target.
+asm_sub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_sub
+.PHONY : asm_sub
+
+# fast build rule for target.
+asm_sub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_sub.dir/build.make CMakeFiles/asm_sub.dir/build
+.PHONY : asm_sub/fast
+
+#=============================================================================
+# Target rules for targets named asm_mul
+
+# Build rule for target.
+asm_mul: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_mul
+.PHONY : asm_mul
+
+# fast build rule for target.
+asm_mul/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_mul.dir/build.make CMakeFiles/asm_mul.dir/build
+.PHONY : asm_mul/fast
+
+#=============================================================================
+# Target rules for targets named asm_div
+
+# Build rule for target.
+asm_div: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_div
+.PHONY : asm_div
+
+# fast build rule for target.
+asm_div/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_div.dir/build.make CMakeFiles/asm_div.dir/build
+.PHONY : asm_div/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -353,17 +457,25 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... asm_add"
 	@echo "... asm_append_str"
 	@echo "... asm_assert"
+	@echo "... asm_div"
 	@echo "... asm_execve"
 	@echo "... asm_exit"
 	@echo "... asm_malloc"
+	@echo "... asm_mul"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
 	@echo "... asm_strcpy"
 	@echo "... asm_string_struct"
 	@echo "... asm_strlen"
+	@echo "... asm_sub"
+	@echo "... ll_add"
+	@echo "... ll_exit"
+	@echo "... ll_print_str"
 	@echo "... ll_strlen"
+	@echo "... ll_sub"
 	@echo "... asmlib"
 	@echo "... src/lib.o"
 	@echo "... src/lib.i"

@@ -14,6 +14,9 @@ asm_assert: ; @func asm_assert(a, b) -> (bool(a == b))
     .false:
         mov rdi, err_msg        ; Load the address of the error message
         call asm_print_str      ; Print the error message
+        mov rax, _EXF           ; Load the exit code for failure
+        ret
+
     .true:
         mov rax, _EXS
         ret

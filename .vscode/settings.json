@@ -4,6 +4,8 @@
         "ostream": "cpp",
         "__locale": "cpp",
         "locale": "cpp",
-        "version": "cpp"
+        "version": "cpp",
+        "string": "cpp",
+        "sstream": "cpp"
     }
 }

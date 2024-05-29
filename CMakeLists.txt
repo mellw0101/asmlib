@@ -61,7 +61,10 @@ check_folder(${CMAKE_SOURCE_DIR}/obj)
 check_folder(${CMAKE_SOURCE_DIR}/src)
 
 compile_ll_to_o(ll_strlen)
-# compile_ll_to_o(ll_strcpy)
+compile_ll_to_o(ll_print_str)
+compile_ll_to_o(ll_exit)
+compile_ll_to_o(ll_add)
+compile_ll_to_o(ll_sub)
 
 # List of assembly files without extension
 set(asm_files
@@ -75,6 +78,10 @@ set(asm_files
     asm_append_str
     asm_exit
     asm_string_struct
+    asm_add
+    asm_sub
+    asm_mul
+    asm_div
 )
 
 # Call the function with the list of assembly files
@@ -102,7 +109,17 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_append_str.o
     ${CMAKE_SOURCE_DIR}/obj/asm_exit.o
     ${CMAKE_SOURCE_DIR}/obj/asm_string_struct.o
+
+    ${CMAKE_SOURCE_DIR}/obj/asm_add.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_sub.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_mul.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_div.o
+
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
+    ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o
+    ${CMAKE_SOURCE_DIR}/obj/ll_exit.o
+    ${CMAKE_SOURCE_DIR}/obj/ll_add.o
+    ${CMAKE_SOURCE_DIR}/obj/ll_sub.o
 )
 
 install(FILES ${LIB_HEADERS} # Install the header files

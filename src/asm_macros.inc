@@ -27,6 +27,26 @@
     section .text
 %endmacro
 
+%macro _data_STRING_2 3
+    section .data
+        %1 db %2, %3, NULL
+    section .text
+%endmacro
+
+%macro d_str 2
+    section .data
+        %1 db %2, NULL
+%endmacro
+
+%macro _what_this_do 0
+    push ebp
+    mov ebp, esp
+    mov eax, [ebp + 8]
+    mov ebx, [ebp + 12]
+    add eax, ebx
+    pop ebp
+    ret
+%endmacro
 
 %define EXIT_FAILURE 1
 %define EXIT_SUCCESS 0
