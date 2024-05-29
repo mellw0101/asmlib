@@ -18,5 +18,5 @@ asm_assert: ; @func asm_assert(a, b) -> (bool(a == b))
     .true:
         mov rax, _EXS
 
-    .exit
+    .exit:
         __FUNC_END__

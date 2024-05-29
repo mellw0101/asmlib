@@ -42,6 +42,8 @@ extern char* asm_strcpy(char *__restrict _dest, const char *__restrict _src) __T
 extern void* asm_malloc(size_t size);
 extern void asm_append_str(char* str, const char* str_to_append);
 extern void asm_errno(const char* str);
+extern size_t asm_find(const char* str, char c);
+extern size_t asm_find_str_end(const char* str);
 
 extern size_t asm_add(size_t a, size_t b);
 extern size_t asm_sub(size_t a, size_t b);

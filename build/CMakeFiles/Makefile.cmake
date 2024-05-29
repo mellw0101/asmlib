@@ -61,5 +61,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/asm_div.dir/DependInfo.cmake"
   "CMakeFiles/asm_errno.dir/DependInfo.cmake"
   "CMakeFiles/asm_get_cwd.dir/DependInfo.cmake"
+  "CMakeFiles/asm_find.dir/DependInfo.cmake"
+  "CMakeFiles/asm_find_str_end.dir/DependInfo.cmake"
   "CMakeFiles/asmlib.dir/DependInfo.cmake"
   )

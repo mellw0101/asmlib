@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "/home/mellw/CLionProjects/asmlib/obj/asm_errno.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_execve.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_exit.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_find.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_find_str_end.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_get_cwd.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_malloc.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_mul.o"

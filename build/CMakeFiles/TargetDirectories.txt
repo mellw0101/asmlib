@@ -19,6 +19,8 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_div.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_errno.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_get_cwd.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_find.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_find_str_end.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/edit_cache.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/rebuild_cache.dir

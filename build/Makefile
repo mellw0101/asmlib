@@ -435,6 +435,32 @@ asm_get_cwd/fast:
 .PHONY : asm_get_cwd/fast
 
 #=============================================================================
+# Target rules for targets named asm_find
+
+# Build rule for target.
+asm_find: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_find
+.PHONY : asm_find
+
+# fast build rule for target.
+asm_find/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_find.dir/build.make CMakeFiles/asm_find.dir/build
+.PHONY : asm_find/fast
+
+#=============================================================================
+# Target rules for targets named asm_find_str_end
+
+# Build rule for target.
+asm_find_str_end: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_find_str_end
+.PHONY : asm_find_str_end
+
+# fast build rule for target.
+asm_find_str_end/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_find_str_end.dir/build.make CMakeFiles/asm_find_str_end.dir/build
+.PHONY : asm_find_str_end/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -490,6 +516,8 @@ help:
 	@echo "... asm_errno"
 	@echo "... asm_execve"
 	@echo "... asm_exit"
+	@echo "... asm_find"
+	@echo "... asm_find_str_end"
 	@echo "... asm_get_cwd"
 	@echo "... asm_malloc"
 	@echo "... asm_mul"

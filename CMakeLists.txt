@@ -84,6 +84,8 @@ set(asm_files
     asm_div
     asm_errno
     asm_get_cwd
+    asm_find
+    asm_find_str_end
 )
 
 # Call the function with the list of assembly files
@@ -118,6 +120,8 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_div.o
     
     ${CMAKE_SOURCE_DIR}/obj/asm_get_cwd.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_find.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_find_str_end.o
     
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
     ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o
