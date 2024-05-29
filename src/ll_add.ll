@@ -1,8 +1,5 @@
 define i32 @ll_add(i32 %a, i32 %b) {
 entry:
-    ; Add the two input parameters
-    %sum = add i32 %a, %b
-
-    ; Return the result
-    ret i32 %sum
+    %sum = add i32 %a, %b ; add the two arguments
+    ret i32 %sum          ; return the result
 }

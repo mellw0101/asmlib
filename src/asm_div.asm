@@ -3,12 +3,8 @@
 section .text
     global asm_div
 
-asm_div:
-    ;
-    ; asm_div(a, b) -> long
-    ;
+asm_div:                ; asm_div(a, b) -> long
     __FUNC_START__
-
     cmp rsi, 0          ; Check if divisor is zero
     je .div_by_zero     ; If zero, jump to div_by_zero
     mov rax, rdi        ; Move first param (rdi) to rax

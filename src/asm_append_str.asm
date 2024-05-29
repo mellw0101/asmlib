@@ -1,9 +1,10 @@
 section .text
     global asm_append_str
 
-%include "/home/mellw/CLionProjects/asmlib/src/asm_macros.inc"
+    %include "/home/mellw/CLionProjects/asmlib/src/asm_macros.inc"
 
 asm_append_str:
+    ;
     ; append_str(dest, src) -> void
     ;
     ; Description: Appends a null-terminated string to another null-terminated string

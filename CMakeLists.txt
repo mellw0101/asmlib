@@ -82,6 +82,8 @@ set(asm_files
     asm_sub
     asm_mul
     asm_div
+    asm_errno
+    asm_get_cwd
 )
 
 # Call the function with the list of assembly files
@@ -89,7 +91,6 @@ assemble_asm_files("${asm_files}")
 
 set(LIB_HEADERS
     ${CMAKE_SOURCE_DIR}/src/lib.h
-    ${CMAKE_SOURCE_DIR}/src/asm_string.h
 )
 
 # Create the static library
@@ -109,12 +110,15 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_append_str.o
     ${CMAKE_SOURCE_DIR}/obj/asm_exit.o
     ${CMAKE_SOURCE_DIR}/obj/asm_string_struct.o
-
+    ${CMAKE_SOURCE_DIR}/obj/asm_errno.o
+    
     ${CMAKE_SOURCE_DIR}/obj/asm_add.o
     ${CMAKE_SOURCE_DIR}/obj/asm_sub.o
     ${CMAKE_SOURCE_DIR}/obj/asm_mul.o
     ${CMAKE_SOURCE_DIR}/obj/asm_div.o
-
+    
+    ${CMAKE_SOURCE_DIR}/obj/asm_get_cwd.o
+    
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
     ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o
     ${CMAKE_SOURCE_DIR}/obj/ll_exit.o

@@ -1,3 +1,2 @@
 /usr/include/asmlib/lib.h
-/usr/include/asmlib/asm_string.h
 /usr/lib/libasmlib.a

@@ -409,6 +409,32 @@ asm_div/fast:
 .PHONY : asm_div/fast
 
 #=============================================================================
+# Target rules for targets named asm_errno
+
+# Build rule for target.
+asm_errno: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_errno
+.PHONY : asm_errno
+
+# fast build rule for target.
+asm_errno/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_errno.dir/build.make CMakeFiles/asm_errno.dir/build
+.PHONY : asm_errno/fast
+
+#=============================================================================
+# Target rules for targets named asm_get_cwd
+
+# Build rule for target.
+asm_get_cwd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_get_cwd
+.PHONY : asm_get_cwd
+
+# fast build rule for target.
+asm_get_cwd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_get_cwd.dir/build.make CMakeFiles/asm_get_cwd.dir/build
+.PHONY : asm_get_cwd/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -461,8 +487,10 @@ help:
 	@echo "... asm_append_str"
 	@echo "... asm_assert"
 	@echo "... asm_div"
+	@echo "... asm_errno"
 	@echo "... asm_execve"
 	@echo "... asm_exit"
+	@echo "... asm_get_cwd"
 	@echo "... asm_malloc"
 	@echo "... asm_mul"
 	@echo "... asm_print_int"
