@@ -91,6 +91,8 @@ set(asm_files
     asm_mkdir
     asm_rm_dir
     asm_cd
+    asm_printf
+    asm_print_char
 )
 
 # Call the function with the list of assembly files
@@ -132,7 +134,9 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_mkdir.o
     ${CMAKE_SOURCE_DIR}/obj/asm_rm_dir.o
     ${CMAKE_SOURCE_DIR}/obj/asm_cd.o
-
+    ${CMAKE_SOURCE_DIR}/obj/asm_printf.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_print_char.o
+    
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
     ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o
     ${CMAKE_SOURCE_DIR}/obj/ll_exit.o

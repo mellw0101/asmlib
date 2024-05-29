@@ -26,6 +26,8 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_mkdir.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_rm_dir.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_cd.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_printf.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_print_char.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/edit_cache.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/rebuild_cache.dir

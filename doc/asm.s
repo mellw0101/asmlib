@@ -114,6 +114,8 @@
 ; esi   ; Lower 32 bits of rsi
 ; si    ; Lower 16 bits of rsi
 ; sil   ; Lower 8 bits of rsi
+; stosb ; store byte from sil into memory
+; stosw ; store word from si into memory
 
 
 ; rdi   ; Destination Index Register (64 bits) - Used as a pointer to a destination in stream operations (e.g., string operations)
@@ -130,7 +132,7 @@
 ; edx   ; Lower 32 bits of rdx
 ; dx    ; Lower 16 bits of rdx
 ; dl    ; Lower 8 bits of rdx
-
+; lodsw ; load word from memory into dx
 
 ; rax:  ; Return Value Register (64 bits) - Used to store the return value of a function
 ;       ;
@@ -138,6 +140,7 @@
 ; eax   ; Lower 32 bits of rax
 ; ax    ; Lower 16 bits of rax
 ; al    ; Lower 8 bits of rax
+; lodsb ; load character from memory into al
 
 ; r8    ; Additional General Purpose Register (64 bits)
 ; r9    ; Additional General Purpose Register (64 bits)
@@ -148,6 +151,15 @@
 ; r14   ; Additional General Purpose Register (64 bits)
 ; r15   ; Additional General Purpose Register (64 bits)
 
+; cp        ; Compare Instruction - Compare two values
+; cmp       ; Compare Instruction - Compare two values
+; test      ; Test Instruction - Perform a bitwise AND operation and update the flags register
+; and       ; AND Instruction - Perform a bitwise AND operation
+; or        ; OR Instruction - Perform a bitwise OR operation
+
+; mov       ;               ; Move Instruction - Move data from one location to another
+; sete      ;               ; Set if Equal - Set a byte to 1 if the Zero Flag (ZF) is set
+; set       ;               ; Set Instruction - Set a byte to a specified value
 ; jmp       ;               ; Jump Instruction - Unconditional jump to a specified address
 ; jmp       ;   label       ; Jump to the specified label
 ; jmp       ;   address     ; Jump to the specified address
@@ -215,3 +227,10 @@
 ; movntpd   ;               ; Move Aligned Packed Double-Precision Floating-Point Values with Non-Temporal Hint Instruction - Move aligned packed double-precision floating-point values with non-temporal hint
 ; movdqa    ;               ; Move Aligned Double Quadword Instruction - Move aligned double quadword
 ; movdqu    ;               ; Move Unaligned Double Quadword Instruction - Move unaligned double quadword
+
+; movzx rdi, byte [rsp+8]     ; load the character from the stack into rdi
+; mov rax, rdi                ; copy the character to rax
+; mov rdi, 1                  ; file descriptor 1 (stdout)
+; mov rsi, rsp                ; address of the character
+; mov rdx, 1                  ; length of the character
+; syscall                     ; make the system call

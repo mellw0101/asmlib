@@ -32,12 +32,19 @@
     #define FALSE 0
 #endif
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 extern size_t asm_assert(size_t a, size_t b, const char* msg);
 #ifndef asmassert
     #define asmassert(statement) asm_assert(statement, TRUE, #statement)
 #endif
 extern size_t asm_execve(const char* path, char* const* argv[], char* const* env[]) __nonnull ((1, 2));
 extern size_t asm_print_str(const char* str);
+extern size_t asm_printf(const char* str, ...);
+extern size_t asm_print_char(char c);
 extern size_t asm_strlen(const char* str);
 extern void asm_print_int(long num);
 extern void asm_exit(long status);
@@ -66,5 +73,9 @@ extern size_t ll_print_str(const char* str);
 extern void ll_exit(long status);
 extern long ll_add(long a, long b);
 extern size_t ll_sub(long a, long b);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif //ASMLIB_LIB_H

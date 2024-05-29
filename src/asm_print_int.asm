@@ -8,8 +8,8 @@ section .text
 
 asm_print_int:              ; asm_print_int(size_t int) -> void
     __FUNC_START__
-    mov rax, rdi
-    lea rbx, [rel int_asm_print_int_buf + 19]
+    mov rax, rdi                                ; Move the integer to rax
+    lea rbx, [rel int_asm_print_int_buf + 19]   ; Calculate the end of the buffer
     mov byte [rbx], NULL                        ; Move a 0 byte into [rbx]
     .convert_loop:                              ; Convert integer to string
         mov rcx, 10                             ; Divisor
@@ -20,6 +20,7 @@ asm_print_int:              ; asm_print_int(size_t int) -> void
         mov [rbx], dl                           ; Store ASCII character
         test rax, rax                           ; Check if quotient is zero
         jnz .convert_loop                       ; If not, continue
+
     lea rsi, [rbx]                              ; Move the string pointer to rsi (second argument for write)
     lea rdx, [rel int_asm_print_int_buf + 19]   ; Calculate length of string
     sub rdx, rbx                                ; Subtract buffer pointer from end of buffer

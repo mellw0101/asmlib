@@ -526,6 +526,32 @@ asm_cd/fast:
 .PHONY : asm_cd/fast
 
 #=============================================================================
+# Target rules for targets named asm_printf
+
+# Build rule for target.
+asm_printf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_printf
+.PHONY : asm_printf
+
+# fast build rule for target.
+asm_printf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_printf.dir/build.make CMakeFiles/asm_printf.dir/build
+.PHONY : asm_printf/fast
+
+#=============================================================================
+# Target rules for targets named asm_print_char
+
+# Build rule for target.
+asm_print_char: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_print_char
+.PHONY : asm_print_char
+
+# fast build rule for target.
+asm_print_char/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_print_char.dir/build.make CMakeFiles/asm_print_char.dir/build
+.PHONY : asm_print_char/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -589,8 +615,10 @@ help:
 	@echo "... asm_malloc"
 	@echo "... asm_mkdir"
 	@echo "... asm_mul"
+	@echo "... asm_print_char"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
+	@echo "... asm_printf"
 	@echo "... asm_rm_dir"
 	@echo "... asm_rm_file"
 	@echo "... asm_strcpy"
