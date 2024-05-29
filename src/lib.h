@@ -49,6 +49,7 @@ extern size_t asm_clear_str(char* str);
 extern size_t asm_rm_file(const char* path) __nonnull ((1));
 extern size_t asm_rm_dir(const char* path) __nonnull ((1));
 extern size_t asm_mkdir(const char* path) __nonnull ((1));
+extern size_t asm_cd(const char* path) __nonnull ((1));
 
 extern size_t asm_add(size_t a, size_t b);
 extern size_t asm_sub(size_t a, size_t b);
