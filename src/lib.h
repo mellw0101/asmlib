@@ -41,7 +41,7 @@ extern size_t asm_assert(size_t a, size_t b, const char* msg);
 #ifndef asmassert
     #define asmassert(statement) asm_assert(statement, TRUE, #statement)
 #endif
-extern size_t asm_execve(const char* path, char* const* argv[], char* const* env[]) __nonnull ((1, 2));
+extern size_t asm_execve(const char* path, char* const argv[], char* const env[]) __nonnull ((1, 2));
 extern size_t asm_print_str(const char* str);
 extern size_t asm_printnl();
 extern size_t asm_cin(char* buf, size_t size);
