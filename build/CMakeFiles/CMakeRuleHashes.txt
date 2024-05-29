@@ -2,6 +2,7 @@
 ae19d731629510e5d6aaf19c3e00efc4 /home/mellw/CLionProjects/asmlib/obj/asm_add.o
 0bfd050fb9988a01122a176d4d4d145a /home/mellw/CLionProjects/asmlib/obj/asm_append_str.o
 8cc91517a6cc0113d91d234c695844de /home/mellw/CLionProjects/asmlib/obj/asm_assert.o
+f78f01d78174e1c6f551b15632fd060c /home/mellw/CLionProjects/asmlib/obj/asm_cd.o
 8a79b3b3e90000b50aae1ba67670c149 /home/mellw/CLionProjects/asmlib/obj/asm_clear_str.o
 0a4785954fe7f69cfd4a2dccbbb0f070 /home/mellw/CLionProjects/asmlib/obj/asm_div.o
 441aebea39133b94c2e3380db8c72915 /home/mellw/CLionProjects/asmlib/obj/asm_errno.o
@@ -32,6 +33,7 @@ c8645a2435a85fcbb039e9c7ce241434 /home/mellw/CLionProjects/asmlib/obj/ll_strlen.
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_add
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_append_str
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_assert
+000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_cd
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_clear_str
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_div
 000e8a51a199109934beb7a550af6ba9 CMakeFiles/asm_errno

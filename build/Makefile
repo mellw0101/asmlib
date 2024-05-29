@@ -513,6 +513,19 @@ asm_rm_dir/fast:
 .PHONY : asm_rm_dir/fast
 
 #=============================================================================
+# Target rules for targets named asm_cd
+
+# Build rule for target.
+asm_cd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_cd
+.PHONY : asm_cd
+
+# fast build rule for target.
+asm_cd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_cd.dir/build.make CMakeFiles/asm_cd.dir/build
+.PHONY : asm_cd/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -564,6 +577,7 @@ help:
 	@echo "... asm_add"
 	@echo "... asm_append_str"
 	@echo "... asm_assert"
+	@echo "... asm_cd"
 	@echo "... asm_clear_str"
 	@echo "... asm_div"
 	@echo "... asm_errno"
