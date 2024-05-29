@@ -32,7 +32,10 @@
     #define FALSE 0
 #endif
 
-extern void asm_assert(size_t a, size_t b, const char* msg);
+extern size_t asm_assert(size_t a, size_t b, const char* msg);
+#ifndef asmassert
+    #define asmassert(statement) asm_assert(statement, TRUE, #statement)
+#endif
 extern size_t asm_execve(const char* path, char* const* argv[], char* const* env[]) __nonnull ((1, 2));
 extern size_t asm_print_str(const char* str);
 extern size_t asm_strlen(const char* str);
@@ -48,7 +51,7 @@ extern size_t asm_find_str_end(const char* str);
 extern size_t asm_clear_str(char* str);
 extern size_t asm_rm_file(const char* path) __nonnull ((1));
 extern size_t asm_rm_dir(const char* path) __nonnull ((1));
-extern size_t asm_mkdir(const char* path) __nonnull ((1));
+extern size_t asm_mkdir(const char* path, size_t mode) __nonnull ((1));
 extern size_t asm_cd(const char* path) __nonnull ((1));
 
 extern size_t asm_add(size_t a, size_t b);
