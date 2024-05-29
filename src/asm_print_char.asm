@@ -3,12 +3,7 @@
 section .text
     global asm_print_char
 
-asm_print_char:
-    ; Print a single character from dil
-    mov rax, 1          ; syscall number for sys_write
-    mov rdi, 1          ; file descriptor for stdout
-    mov rsi, rdi        ; rsi already has the character
-
-    mov rdx, 1          ; length is 1 byte
-    syscall             ; make the syscall
-    ret
+; Function to print a character
+asm_print_char:         ; rdi = char to print
+    FUNC_START_FULL
+    FUNC_END_FULL

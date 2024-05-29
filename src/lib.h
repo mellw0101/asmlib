@@ -60,6 +60,10 @@ extern size_t asm_rm_file(const char* path) __nonnull ((1));
 extern size_t asm_rm_dir(const char* path) __nonnull ((1));
 extern size_t asm_mkdir(const char* path, size_t mode) __nonnull ((1));
 extern size_t asm_cd(const char* path) __nonnull ((1));
+// extern size_t asm_chmod(const char* path, size_t mode) __nonnull ((1));
+extern size_t asm_open_file(const char* path, size_t flags, size_t mode) __nonnull ((1));
+extern size_t asm_touch(const char* path) __nonnull ((1));
+extern size_t asm_write(size_t fd, void* buf, size_t count) __nonnull ((2));
 
 extern size_t asm_add(size_t a, size_t b);
 extern size_t asm_sub(size_t a, size_t b);

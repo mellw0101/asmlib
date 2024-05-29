@@ -552,6 +552,45 @@ asm_print_char/fast:
 .PHONY : asm_print_char/fast
 
 #=============================================================================
+# Target rules for targets named asm_touch
+
+# Build rule for target.
+asm_touch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_touch
+.PHONY : asm_touch
+
+# fast build rule for target.
+asm_touch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_touch.dir/build.make CMakeFiles/asm_touch.dir/build
+.PHONY : asm_touch/fast
+
+#=============================================================================
+# Target rules for targets named asm_write
+
+# Build rule for target.
+asm_write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_write
+.PHONY : asm_write
+
+# fast build rule for target.
+asm_write/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_write.dir/build.make CMakeFiles/asm_write.dir/build
+.PHONY : asm_write/fast
+
+#=============================================================================
+# Target rules for targets named asm_open_file
+
+# Build rule for target.
+asm_open_file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_open_file
+.PHONY : asm_open_file
+
+# fast build rule for target.
+asm_open_file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_open_file.dir/build.make CMakeFiles/asm_open_file.dir/build
+.PHONY : asm_open_file/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -615,6 +654,7 @@ help:
 	@echo "... asm_malloc"
 	@echo "... asm_mkdir"
 	@echo "... asm_mul"
+	@echo "... asm_open_file"
 	@echo "... asm_print_char"
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
@@ -625,6 +665,8 @@ help:
 	@echo "... asm_string_struct"
 	@echo "... asm_strlen"
 	@echo "... asm_sub"
+	@echo "... asm_touch"
+	@echo "... asm_write"
 	@echo "... ll_add"
 	@echo "... ll_exit"
 	@echo "... ll_print_str"
