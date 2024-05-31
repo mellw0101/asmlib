@@ -604,6 +604,32 @@ asm_cin/fast:
 .PHONY : asm_cin/fast
 
 #=============================================================================
+# Target rules for targets named asm_strcmp
+
+# Build rule for target.
+asm_strcmp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_strcmp
+.PHONY : asm_strcmp
+
+# fast build rule for target.
+asm_strcmp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_strcmp.dir/build.make CMakeFiles/asm_strcmp.dir/build
+.PHONY : asm_strcmp/fast
+
+#=============================================================================
+# Target rules for targets named asm_substr
+
+# Build rule for target.
+asm_substr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_substr
+.PHONY : asm_substr
+
+# fast build rule for target.
+asm_substr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_substr.dir/build.make CMakeFiles/asm_substr.dir/build
+.PHONY : asm_substr/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -675,10 +701,12 @@ help:
 	@echo "... asm_printf"
 	@echo "... asm_rm_dir"
 	@echo "... asm_rm_file"
+	@echo "... asm_strcmp"
 	@echo "... asm_strcpy"
 	@echo "... asm_string_struct"
 	@echo "... asm_strlen"
 	@echo "... asm_sub"
+	@echo "... asm_substr"
 	@echo "... asm_touch"
 	@echo "... asm_write"
 	@echo "... ll_add"

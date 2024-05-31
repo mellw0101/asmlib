@@ -71,6 +71,7 @@
 ;   rsi = b
 ;   rdx = c
 ;   rcx = d
+;   rbx
 ;   r8 = e
 ;   r9 = f
 ;   rbp = function
@@ -125,6 +126,13 @@
 ; di    ; Lower 16 bits of rdi
 ; dil   ; Lower 8 bits of rdi
 
+; rcx   ; Counter Register (64 bits) - Used for loop control, shift/rotate operations, and as a counter for string and memory operations
+;       ;
+; rcx   ; Entire 64-bit register
+; ecx   ; Lower 32 bits of rcx
+; cx    ; Lower 16 bits of rcx
+; cl    ; Lower 8 bits of rcx
+; lodsb ; load byte from memory into cl (lower 8 bits of rcx) 
 
 ; rdx:  ; Data Register (64 bits) - Used as an I/O pointer
 ;       ;
@@ -141,6 +149,14 @@
 ; ax    ; Lower 16 bits of rax
 ; al    ; Lower 8 bits of rax
 ; lodsb ; load character from memory into al
+
+; rbx:  ; Base Register (64 bits) - Used as a pointer to data
+;       ;
+; rbx   ; Entire 64-bit register
+; ebx   ; Lower 32 bits of rbx
+; bx    ; Lower 16 bits of rbx
+; bl    ; Lower 8 bits of rbx
+
 
 ; r8    ; Additional General Purpose Register (64 bits)
 ; r9    ; Additional General Purpose Register (64 bits)
@@ -159,6 +175,7 @@
 
 ; mov       ;               ; Move Instruction - Move data from one location to another
 ; sete      ;               ; Set if Equal - Set a byte to 1 if the Zero Flag (ZF) is set
+; xor       ;               ; XOR Instruction - Perform a bitwise XOR operation, used to clear a register
 ; set       ;               ; Set Instruction - Set a byte to a specified value
 ; jmp       ;               ; Jump Instruction - Unconditional jump to a specified address
 ; jmp       ;   label       ; Jump to the specified label
@@ -207,6 +224,7 @@
 ; int       ;               ; Interrupt Instruction - Generate a software interrupt
 ; hlt       ;               ; Halt Instruction - Halt the processor
 ; loop      ;               ; Loop Instruction - Loop a specified number of times
+; loop      ;   label       ; Loop to the specified label
 ; rep       ;               ; Repeat Instruction - Repeat a string operation
 ; movzx     ;               ; Move with Zero-Extend Instruction - Move with zero extension
 ; movsx     ;               ; Move with Sign-Extend Instruction - Move with sign extension
