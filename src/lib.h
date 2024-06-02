@@ -67,6 +67,21 @@ extern size_t asm_open_file(const char* path, size_t flags, size_t mode) __nonnu
 extern size_t asm_touch(const char* path) __nonnull ((1));
 extern size_t asm_write(size_t fd, void* buf, size_t count) __nonnull ((2));
 extern size_t asm_strcmp (const char *__s1, const char *__s2) __THROW __nonnull ((1, 2));
+extern size_t asm_read(int fd, const void* buf, size_t count);
+// {
+//     size_t result;
+//     asm volatile("movq $0, %%rax\n" // syscall number for read (0)
+//                  "movq %1, %%rdi\n" // file descriptor
+//                  "movq %2, %%rsi\n" // buffer
+//                  "movq %3, %%rdx\n" // count
+//                  "syscall\n"        // invoke syscall
+//                  "movq %%rax, %0\n" // store result in variable
+//                  : "=r"(result)     // output operand list
+//                  : "r"((long)fd), "r"(buf), "r"((long)count) // input operand list
+//                  : "%rax", "%rdi", "%rsi", "%rdx");
+//     return result;
+// }
+
 // extern size_t asm_substr(char* str, const char* sub_str, size_t start, size_t end) __nonnull ((1));
 
 // TODO: Implement these functions

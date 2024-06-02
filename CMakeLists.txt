@@ -99,6 +99,7 @@ set(asm_files
     asm_cin
     asm_strcmp
     asm_substr
+    asm_read
 )
 
 # Call the function with the list of assembly files
@@ -148,6 +149,7 @@ add_library(asmlib STATIC
     ${CMAKE_SOURCE_DIR}/obj/asm_cin.o
     ${CMAKE_SOURCE_DIR}/obj/asm_strcmp.o
     ${CMAKE_SOURCE_DIR}/obj/asm_substr.o
+    ${CMAKE_SOURCE_DIR}/obj/asm_read.o
     
     ${CMAKE_SOURCE_DIR}/obj/ll_strlen.o
     ${CMAKE_SOURCE_DIR}/obj/ll_print_str.o

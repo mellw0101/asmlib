@@ -34,6 +34,7 @@
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_cin.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_strcmp.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_substr.dir
+/home/mellw/CLionProjects/asmlib/build/CMakeFiles/asm_read.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/asmlib.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/edit_cache.dir
 /home/mellw/CLionProjects/asmlib/build/CMakeFiles/rebuild_cache.dir

@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_int.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_print_str.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_printf.o"
+  "/home/mellw/CLionProjects/asmlib/obj/asm_read.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_rm_dir.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_rm_file.o"
   "/home/mellw/CLionProjects/asmlib/obj/asm_strcmp.o"

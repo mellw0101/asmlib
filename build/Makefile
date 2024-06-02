@@ -630,6 +630,19 @@ asm_substr/fast:
 .PHONY : asm_substr/fast
 
 #=============================================================================
+# Target rules for targets named asm_read
+
+# Build rule for target.
+asm_read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 asm_read
+.PHONY : asm_read
+
+# fast build rule for target.
+asm_read/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/asm_read.dir/build.make CMakeFiles/asm_read.dir/build
+.PHONY : asm_read/fast
+
+#=============================================================================
 # Target rules for targets named asmlib
 
 # Build rule for target.
@@ -699,6 +712,7 @@ help:
 	@echo "... asm_print_int"
 	@echo "... asm_print_str"
 	@echo "... asm_printf"
+	@echo "... asm_read"
 	@echo "... asm_rm_dir"
 	@echo "... asm_rm_file"
 	@echo "... asm_strcmp"
