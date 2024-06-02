@@ -14,6 +14,8 @@ asm_print_str:
     ;   Returns: 0 on success, -1 on failure
     ;
     FUNC_START_FULL
+    cmp rdi, 0                          ; Check if the string pointer is null
+    je .end                             ; If null, jump to end
     mov rsi, rdi                        ; Move the string pointer to rsi (second argument for write)
     mov rdx, 0                          ; Initialize rdx to 0 for length calculation
     .find_len:
@@ -27,7 +29,8 @@ asm_print_str:
         mov rdi, 1                      ; File descriptor 1 (stdout)
         syscall                         ; Make the system call
 
-    FUNC_END_FULL
+    .end:
+        FUNC_END_FULL
 
 
 asm_printnl:

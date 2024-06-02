@@ -2,7 +2,7 @@
 
 section .rodata
     msg_1 db "asm_substr: ERROR: Invalid index, start_index >= str_len", 0xA, 0
-    msg_2 db "asm_substr: ERROR: Invalid index, end_index >= start_index", 0xA, 0
+    msg_2 db "asm_substr: ERROR: Invalid index, start_index >= end_index", 0xA, 0
     msg_3 db "asm_substr: ERROR: Invalid index, end_index > str_len", 0xA, 0
     msg_4 db "asm_substr: ERROR", 0
 
@@ -22,17 +22,17 @@ asm_substr:
     FUNC_START_FULL
     xor rax, rax
     cmp rdx, rcx
-    jge .end_index_higher_than_start
+    jge .start_index_higher_than_end
     jmp .find_null
 
-    .end_index_higher_than_start:
-        mov rax, 0
+    .start_index_higher_than_end:
         lea rdi, [rel msg_2]
         call asm_print_str
+        mov rax, 0
         jmp .end
 
     .find_null:
-        cmp byte [ rdi + rax ], 0
+        cmp byte [rdi+rax], 0
         je .found_null
         inc rax
         jmp .find_null
